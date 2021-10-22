@@ -9,5 +9,7 @@ export const club_member_details = [
     desgination: 'Cloud Native Developer',
     member_type: 'Representative',
     profile_img: 'https://avatars.githubusercontent.com/u/52108126?v=4',
+    linkedln_link: `https://www.linkedin.com/in/debarshi-mondal-developer/`,
+    github_link: `https://github.com/LENO-DEV`
   }
 ];

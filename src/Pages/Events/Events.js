@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 
 
@@ -16,9 +17,11 @@ const Events = () => {
           enim quas nisi illo omnis accusamus adipisci ex quia ad.
         </p>
         <article>
-          <button className="btn mt-2">
-            Checkout...
-          </button>
+          <Link to="/events">
+            <button className="btn mt-2">
+              Checkout...
+            </button>
+          </Link>
         </article>
       </div>
     </div>

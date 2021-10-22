@@ -11,9 +11,9 @@ import Error from './Pages/Error';
 import Tech from './Pages/Tech';
 import Members from './Pages/Members/Members';
 import Contact from './Pages/Contact';
-import Events from './Pages/Events/Events';
 import Footer from './Component/Footer';
 import MemberBrief from './Pages/Members/MemberBrief';
+import EventPage from './Pages/Events/EventPage/EventPage';
 
 
 
@@ -21,7 +21,7 @@ const App = () => {
   AOS.init();
   const { modalOpen } = useContext(GlobalContext);
 
- 
+
   return <>
     <SideBar />
     <div className={`${modalOpen ? 'opacity--reduce' : null}`}>
@@ -29,9 +29,9 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/aboutus" component={AboutUs} />
-        <Route path="/events" component={Events} />
+        <Route path="/events" component={EventPage} />
         <Route exact path="/members" component={Members} />
-        <Route  path="/members/brief" component={MemberBrief} />
+        <Route path="/members/brief" component={MemberBrief} />
         <Route path="/tech" component={Tech} />
         <Route path="/contactus" component={Contact} />
         <Route path="*" component={Error} />

@@ -15,9 +15,15 @@ const Home = () => {
 
   return <section className="home--section">
     <article className="socials">
-      <p><i className="fab fa-linkedin text-primary"></i></p>
-      <p><i className="fab fa-github-square"></i></p>
-      <p><i className="fab fa-facebook-square"></i></p>
+      <p><a href="https://www.linkedin.com/company/nist-cloud-computing-club" target="_blank" rel="noreferrer">
+        <i className="fab fa-linkedin text-primary"></i>
+      </a></p>
+      <p><a href="https://github.com/LENO-DEV/NIST_CCC" target="_blank" rel="noreferrer">
+        <i className="fab fa-github-square"></i>
+      </a></p>
+      <p><a href="https://www.facebook.com/ccc.nist/" target="_blank" rel="noreferrer">
+        <i className="fab fa-facebook-square"></i>
+      </a></p>
     </article>
     <div className="">
       <article className="home--text" data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-out">
