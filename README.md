@@ -10,7 +10,7 @@
  ```
   git checkout -b <branch_name>
  ```
- - update the code change on the file `memberDetails`
+ - update the code change on the file `memberDetails.js`
  - commit the changes & push
  ```
   git add .
