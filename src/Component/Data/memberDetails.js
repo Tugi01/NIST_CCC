@@ -22,5 +22,16 @@ export const club_member_details = [
     profile_img: 'https://avatars.githubusercontent.com/u/64701665?v=4',
     linkedln_link: `https://www.linkedin.com/in/suman-patra-0598a11a7/`,
     github_link: `https://github.com/sumanpatra-123`
+  },
+  {
+    id: 3,
+    firstname: 'Sunil',
+    fullname: 'Sutari Sunil reddy',
+    description: `interest for Android App Development,Graphics Design and Cloud Computing.',
+    desgination: 'Android App Developer and Graphics Designer',
+    member_type: 'Representative',
+    profile_img: 'https://avatars.githubusercontent.com/u/66204882?v=4',
+    linkedln_link: `https://www.linkedin.com/in/sutari-sunil-reddy-b80796196/`,
+    github_link: `https://github.com/Sunilreddy0`
   }
 ];
