@@ -33,5 +33,16 @@ export const club_member_details = [
     profile_img: 'https://avatars.githubusercontent.com/u/66204882?v=4',
     linkedln_link: `https://www.linkedin.com/in/sutari-sunil-reddy-b80796196/`,
     github_link: `https://github.com/Sunilreddy0`
+  },
+  {
+    id: 5,
+    firstname: 'AYUSH',
+    fullname: 'AYUSH GUPTA',
+    description: `interest for Android App Development and Cloud Computing.',
+    desgination: 'Android devloper',
+    member_type: 'Core Member',
+    profile_img: 'https://avatars.githubusercontent.com/u/83214495?v=4',
+    linkedln_link: `https://www.linkedin.com/in/ayush-gupta-557175158`,
+    github_link: `https://github.com/ayushgupta536`
   }
 ];
