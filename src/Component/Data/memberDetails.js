@@ -45,4 +45,5 @@ export const club_member_details = [
     linkedln_link: `www.linkedin.com/in/pradiptabehera/`,
     github_link: `https://github.com/PradiptaBehera8558`
   }
+  
 ];
