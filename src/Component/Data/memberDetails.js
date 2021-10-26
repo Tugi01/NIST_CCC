@@ -27,7 +27,7 @@ export const club_member_details = [
     id: 3,
     firstname: 'Sunil',
     fullname: 'Sutari Sunil reddy',
-    description: `interest for Android App Development,Graphics Design and Cloud Computing.',
+    description: `interest for Android App Development,Graphics Design and Cloud Computing.`,
     desgination: 'Android App Developer and Graphics Designer',
     member_type: 'Representative',
     profile_img: 'https://avatars.githubusercontent.com/u/66204882?v=4',
