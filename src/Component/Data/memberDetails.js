@@ -16,7 +16,7 @@ export const club_member_details = [
     id: 2,
     firstname: 'Suman',
      fullname: 'Suman Patra',
-    description: `Love and interest for web development and Cloud Computing. So, far I learned and hosted websites on cloud.',
+    description: `Love and interest for web development and Cloud Computing. So, far I learned and hosted websites on cloud.`,
     desgination: 'Web Developer',
     member_type: 'Core Member',
     profile_img: 'https://avatars.githubusercontent.com/u/64701665?v=4',

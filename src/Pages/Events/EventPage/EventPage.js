@@ -1,13 +1,23 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import '../events.css';
-
+import EventDetails from './EventDetails';
 
 const EventPage = () => {
-  return <section className="event--page--section">
-    <h2 className="p-5">Event Page</h2>
-    <div className="card container shadow event--page">
-      <h1>Updating Soon...</h1>
-    </div>
+  return <section className="container event--page--section">
+    <h2 className="">Event Page</h2>
+    <article className="event--filter">
+      <NavLink to="/events" className="filter--nav--link">
+        <p>All Events</p>
+      </NavLink>
+      <NavLink to="/events/previous" className="filter--nav--link">
+        <p>Previous</p>
+      </NavLink>
+      <NavLink to="/events/upcoming" className="filter--nav--link">
+        <p>Upcoming</p>
+      </NavLink>
+    </article>
+    <EventDetails />
   </section>
 }
 

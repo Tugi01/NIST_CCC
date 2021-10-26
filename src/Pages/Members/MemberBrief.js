@@ -24,7 +24,7 @@ const MemberBrief = () => {
         </Link>
       </div>
       <div className="col-md-5 mt-5">
-        <div className="watch_img_card shadow-sm mb-5">
+        <div className="watch_img_card shadow mb-5">
           <img src={memberDetails.profile_img}
             className="card-img-top" alt="..." />
         </div>
