@@ -36,6 +36,17 @@ export const club_member_details = [
   },
   {
     id: 4,
+    firstname: 'Vikas',
+     fullname: 'Vikas Kumar',
+    description: `Interest for web development and Cloud Computing. So, far I learned to build and host websites and learning cloud computing.`,
+    desgination: 'Web Developer',
+    member_type: 'Core Member',
+    profile_img: 'https://avatars.githubusercontent.com/u/93202107?v=4',
+    linkedln_link: `https://www.linkedin.com/in/vikas-kumar-3496501aa/`,
+    github_link: `https://github.com/Vikas1211K`
+  },
+  {
+    id: 5,
     firstname: 'Pradipta',
     fullname: 'Pradipta Pentha Behera',
     description: `Enthusiast in AI and Computer Vision Research`,
@@ -45,5 +56,4 @@ export const club_member_details = [
     linkedln_link: `www.linkedin.com/in/pradiptabehera/`,
     github_link: `https://github.com/PradiptaBehera8558`
   }
-  
 ];
