@@ -45,4 +45,15 @@ export const club_member_details = [
     linkedln_link: `https://www.linkedin.com/in/vikas-kumar-3496501aa/`,
     github_link: `https://github.com/Vikas1211K`
   },
+  {
+    id: 5,
+    firstname: 'Pradipta',
+    fullname: 'Pradipta Pentha Behera',
+    description: `Enthusiast in AI and Computer Vision Research`,
+    desgination: 'Data Analyst',
+    member_type: 'Core Member',
+    profile_img: '',
+    linkedln_link: `www.linkedin.com/in/pradiptabehera/`,
+    github_link: `https://github.com/PradiptaBehera8558`
+  }
 ];

@@ -1,6 +1,5 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom';
-import { useState } from 'react/cjs/react.development';
 import { club_member_details } from '../../Component/Data/memberDetails';
 import { GlobalContext } from '../../Context';
 import './member.css';
@@ -8,12 +7,12 @@ import './member.css';
 
 const Members = () => {
   document.body.style.backgroundColor = 'whitesmoke';
-  const {  setMemberDetails } = useContext(GlobalContext);
+  const { setMemberDetails } = useContext(GlobalContext);
   const [details] = useState(club_member_details);
 
 
   return <section className="container member--section">
-    <h1>Club Members</h1>
+    <h1>Club Memberss</h1>
     <article className="">
       <main className="member--lists">
         {
