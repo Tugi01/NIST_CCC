@@ -12,13 +12,13 @@ const Members = () => {
 
 
   return <section className="container member--section">
-    <h1>Club Memberss</h1>
+    <h1>Club Members</h1>
     <article className="">
       <main className="member--lists">
         {
           details && details.map((item) => {
             const { firstname, profile_img, member_type } = item;
-            var images = profile_img.length > 50
+            var images = profile_img.includes('https')
               ? profile_img
               : 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/1024px-User-avatar.svg.png'
 
