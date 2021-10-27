@@ -18,10 +18,14 @@ const Members = () => {
         {
           details && details.map((item) => {
             const { firstname, profile_img, member_type } = item;
+            var images = profile_img.length > 50
+              ? profile_img
+              : 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/1024px-User-avatar.svg.png'
+
             return <Link to="/members/brief" onClick={() => setMemberDetails(item)} className="link_to_brief" >
               <div className="card member--div">
                 <div className="member--img">
-                  <img class="card-img-top" src={profile_img} alt="Card cap" />
+                  <img class="card-img-top" src={images} alt="Card cap" />
                   <p>{firstname}</p>
                 </div>
                 <div class="card-body mt-2">

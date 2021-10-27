@@ -55,7 +55,7 @@ export const club_member_details = [
     profile_img: '',
     linkedln_link: `www.linkedin.com/in/pradiptabehera/`,
     github_link: `https://github.com/PradiptaBehera8558`
-  }
+  },
   {
     id: 4,
     firstname: 'Nishan',
