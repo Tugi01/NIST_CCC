@@ -33,5 +33,17 @@ export const club_member_details = [
     profile_img: 'https://avatars.githubusercontent.com/u/66204882?v=4',
     linkedln_link: `https://www.linkedin.com/in/sutari-sunil-reddy-b80796196/`,
     github_link: `https://github.com/Sunilreddy0`
+  },
+  {
+    id: 4,
+    firstname: 'Pradipta',
+    fullname: 'Pradipta Pentha Behera',
+    description: `Enthusiast in AI and Computer Vision Research`,
+    desgination: 'Data Analyst',
+    member_type: 'Core Member',
+    profile_img: '',
+    linkedln_link: `www.linkedin.com/in/pradiptabehera/`,
+    github_link: `https://github.com/PradiptaBehera8558`
   }
+  
 ];
