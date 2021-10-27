@@ -33,5 +33,38 @@ export const club_member_details = [
     profile_img: 'https://avatars.githubusercontent.com/u/66204882?v=4',
     linkedln_link: `https://www.linkedin.com/in/sutari-sunil-reddy-b80796196/`,
     github_link: `https://github.com/Sunilreddy0`
+  },
+  {
+    id: 4,
+    firstname: 'Vikas',
+     fullname: 'Vikas Kumar',
+    description: `Interest for web development and Cloud Computing. So, far I learned to build and host websites and learning cloud computing.`,
+    desgination: 'Web Developer',
+    member_type: 'Core Member',
+    profile_img: 'https://avatars.githubusercontent.com/u/93202107?v=4',
+    linkedln_link: `https://www.linkedin.com/in/vikas-kumar-3496501aa/`,
+    github_link: `https://github.com/Vikas1211K`
+  },
+  {
+    id: 5,
+    firstname: 'Pradipta',
+    fullname: 'Pradipta Pentha Behera',
+    description: `Enthusiast in AI and Computer Vision Research`,
+    desgination: 'Data Analyst',
+    member_type: 'Core Member',
+    profile_img: '',
+    linkedln_link: `www.linkedin.com/in/pradiptabehera/`,
+    github_link: `https://github.com/PradiptaBehera8558`
+  },
+  {
+    id: 4,
+    firstname: 'Nishan',
+    fullname: 'Nishan kumar tripathy',
+    description: `interest for software development and Cloud Computing.`,
+    desgination: 'Software developer',
+    member_type: 'Core Member',
+    profile_img: 'https://avatars.githubusercontent.com/u/61120029?v=4',
+    linkedln_link: `www.linkedin.com/in/nishan-tripathy-67a935195`,
+    github_link: `https://github.com/nishankumartripathy`
   }
 ];
