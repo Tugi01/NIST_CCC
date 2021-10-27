@@ -36,6 +36,14 @@ export const club_member_details = [
   },
   {
     id: 4,
+    firstname: 'Subhasis',
+    fullname: 'Subhasis Patra',
+    description: `interest for Networking and Cloud Computing.`,    
+    member_type: 'Core Member',
+    github_link: `https://github.com/patrasubhasis/`
+  },
+  {
+    id: 5,
     firstname: 'Vikas',
      fullname: 'Vikas Kumar',
     description: `Interest for web development and Cloud Computing. So, far I learned to build and host websites and learning cloud computing.`,
@@ -46,7 +54,7 @@ export const club_member_details = [
     github_link: `https://github.com/Vikas1211K`
   },
   {
-    id: 5,
+    id: 6,
     firstname: 'Pradipta',
     fullname: 'Pradipta Pentha Behera',
     description: `Enthusiast in AI and Computer Vision Research`,
@@ -57,7 +65,7 @@ export const club_member_details = [
     github_link: `https://github.com/PradiptaBehera8558`
   },
   {
-    id: 4,
+    id: 7,
     firstname: 'Nishan',
     fullname: 'Nishan kumar tripathy',
     description: `interest for software development and Cloud Computing.`,
