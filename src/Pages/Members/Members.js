@@ -11,6 +11,10 @@ const Members = () => {
   const [details] = useState(club_member_details);
 
 
+
+  details.sort((a, b) => b.member_type.localeCompare(a.member_type))
+
+
   return <section className="container member--section">
     <h1>Club Members</h1>
     <article className="">
