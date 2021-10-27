@@ -12,7 +12,7 @@ const Members = () => {
 
 
   return <section className="container member--section">
-    <h1>Club Members</h1>
+    <h1>Club Memberss</h1>
     <article className="">
       <main className="member--lists">
         {
