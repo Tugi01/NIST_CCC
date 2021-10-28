@@ -98,7 +98,7 @@ export const club_member_details = [
     year: '2018'
   },
   {
-    id: 8,
+    id: 9,
     firstname:'Asutosh',
     fullname: 'Asutosh Das',
     description: `interest for web development and Cloud Computing and machine learing`,
