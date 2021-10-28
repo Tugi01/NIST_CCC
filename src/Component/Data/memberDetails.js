@@ -38,7 +38,7 @@ export const club_member_details = [
     id: 5,
     firstname: 'AYUSH',
     fullname: 'AYUSH GUPTA',
-    description: `interest for Android App Development and Cloud Computing.`,
+    description: `interest for Android App Development and Cloud Computing.',
     desgination: 'Android devloper',
     member_type: 'Core Member',
     profile_img: 'https://avatars.githubusercontent.com/u/83214495?v=4',
@@ -49,9 +49,9 @@ export const club_member_details = [
     id: 4,
     firstname: 'Subhasis',
     fullname: 'Subhasis Patra',
-    description: `interest for Networking and Cloud Computing.`,
+    description: `interest for Networking and Cloud Computing.`,    
     member_type: 'Core Member',
-    github_link: `https://github.com/patrasubhasis/`,
+    github_link: `https://github.com/patrasubhasis/`
   },
   {
     id: 5,
@@ -83,18 +83,18 @@ export const club_member_details = [
     desgination: 'Software developer',
     member_type: 'Core Member',
     profile_img: 'https://avatars.githubusercontent.com/u/61120029?v=4',
-    linkedln_link: `https://www.linkedin.com/in/nishan-tripathy-67a935195`,
+    linkedln_link: `www.linkedin.com/in/nishan-tripathy-67a935195`,
     github_link: `https://github.com/nishankumartripathy`
   },
   {
-    id: 7,
-    firstname: 'Subha',
-    fullname: 'Subha Das',
-    description: `interest in Machine Learning and AI.`,
-    desgination: 'Software developer',
+    id: 8,
+    firstname:'Asutosh',
+    fullname: 'Asutosh Das',
+    description: `interest for web development and Cloud Computing and machine learing`,
+    desgination: 'Frontend developer',
     member_type: 'Core Member',
-    profile_img: 'https://avatars.githubusercontent.com/u/73764750?v=4',
-    linkedln_link: `https://www.linkedin.com/in/subha-das-5a7807195/`,
-    github_link: `https://github.com/su-d`
+    profile_img: 'https://avatars.githubusercontent.com/u/87987600?v=4',
+    linkedln_link: `https://www.linkedin.com/in/asutosh-das-082b5419a`,
+    github_link: `https://github.com/asu2002`
   }
 ];
