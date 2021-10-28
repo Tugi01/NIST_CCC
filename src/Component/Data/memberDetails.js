@@ -117,6 +117,18 @@ export const club_member_details = [
     linkedln_link: `https://www.linkedin.com/in/vinati-perikala-1630481b9/`,
     github_link: `https://github.com/Vinati098',
     year: '2019'
+  },
+  {
+    id: 8,
+    firstname: 'Soumya',
+    fullname: 'Soumyajeet Khuntia',
+    description: `interest in coding leads to problem solver using different programming language and into the 
+    cloud computing domain`,
+    desgination: 'Software developer',
+    member_type: 'Core Member',
+    profile_img: 'https://avatars.githubusercontent.com/u/70887993?v=4',
+    linkedln_link: `https://www.linkedin.com/in/soumyajeet-khuntia-a68855160/`,
+    github_link: `https://github.com/Soumyajeet02`,
+    year: '2018'
   }
-  
 ];
