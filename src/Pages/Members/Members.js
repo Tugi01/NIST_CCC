@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { club_member_details } from '../../Component/Data/memberDetails';
 import { GlobalContext } from '../../Context';
-import './member.css'
+import './member.css';
 
 
 const Members = () => {

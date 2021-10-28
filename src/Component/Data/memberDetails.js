@@ -115,7 +115,7 @@ export const club_member_details = [
     member_type: 'Core Member',
     profile_img: 'https://avatars.githubusercontent.com/u/75937844?v=4',
     linkedln_link: `https://www.linkedin.com/in/vinati-perikala-1630481b9/`,
-    github_link: `https://github.com/Vinati098',
+    github_link: `https://github.com/Vinati098`,
     year: '2019'
   }
   
