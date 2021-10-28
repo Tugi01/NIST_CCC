@@ -105,5 +105,17 @@ export const club_member_details = [
     linkedln_link: `https://www.linkedin.com/in/subha-das-5a7807195/`,
     github_link: `https://github.com/su-d`,
     year: '2018'
+  },
+  {
+    id: 10,
+    firstname: 'Samir',
+    fullname: 'Samir Gouda',
+    description: `Enthusiasts in Cloud Computing.Currently exploring on Machine Learning field.`,
+    desgination: 'Machine Learning Learner',
+    member_type: 'Core Member',
+    profile_img: 'https://avatars.githubusercontent.com/u/73764750?v=4',
+    linkedln_link: `https://www.linkedin.com/in/samir-gouda-a70b461a6`,
+    github_link: `https://avatars.githubusercontent.com/u/64476238?v=4`,
+    year: '2018'
   }
 ];
