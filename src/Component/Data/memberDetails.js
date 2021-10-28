@@ -105,7 +105,19 @@ export const club_member_details = [
     linkedln_link: `https://www.linkedin.com/in/subha-das-5a7807195/`,
     github_link: `https://github.com/su-d`,
     year: '2018'
-  }
+  },
+  {
+    id: 9,
+    firstname: 'Vinati',
+    fullname: 'Perikala Vinati',
+    description: `interest in Machine Learning and AI.`,
+    desgination: 'Software developer',
+    member_type: 'Core Member',
+    profile_img: 'https://avatars.githubusercontent.com/u/75937844?v=4',
+    linkedln_link: `https://www.linkedin.com/in/vinati-perikala-1630481b9/`,
+    github_link: `https://github.com/Vinati098',
+    year: '2019'
+  },
   {
     id: 8,
     firstname: 'Soumya',
@@ -118,9 +130,5 @@ export const club_member_details = [
     linkedln_link: `https://www.linkedin.com/in/soumyajeet-khuntia-a68855160/`,
     github_link: `https://github.com/Soumyajeet02`,
     year: '2018'
-  
-  
-  
-  
   }
 ];
