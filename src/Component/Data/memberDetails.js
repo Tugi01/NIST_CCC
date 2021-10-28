@@ -113,9 +113,9 @@ export const club_member_details = [
     description: `Enthusiasts in Cloud Computing.Currently exploring on Machine Learning field.`,
     desgination: 'Machine Learning Learner',
     member_type: 'Core Member',
-    profile_img: 'https://avatars.githubusercontent.com/u/73764750?v=4',
+    profile_img: 'https://avatars.githubusercontent.com/u/64476238?v=4',
     linkedln_link: `https://www.linkedin.com/in/samir-gouda-a70b461a6`,
-    github_link: `https://avatars.githubusercontent.com/u/64476238?v=4`,
+    github_link: `https://github.com/samir282`,
     year: '2018'
   }
 ];
