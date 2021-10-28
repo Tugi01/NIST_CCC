@@ -12,6 +12,7 @@ const Members = () => {
 
 
 
+  details.sort((a, b) => a.year.localeCompare(b.year))
   details.sort((a, b) => b.member_type.localeCompare(a.member_type))
 
 

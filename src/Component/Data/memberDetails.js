@@ -10,7 +10,8 @@ export const club_member_details = [
     member_type: 'Representative',
     profile_img: 'https://avatars.githubusercontent.com/u/52108126?v=4',
     linkedln_link: `https://www.linkedin.com/in/debarshi-mondal-developer/`,
-    github_link: `https://github.com/LENO-DEV`
+    github_link: `https://github.com/LENO-DEV`,
+    year: '2018'
   },
   {
     id: 2,
@@ -21,7 +22,8 @@ export const club_member_details = [
     member_type: 'Core Member',
     profile_img: 'https://avatars.githubusercontent.com/u/64701665?v=4',
     linkedln_link: `https://www.linkedin.com/in/suman-patra-0598a11a7/`,
-    github_link: `https://github.com/sumanpatra-123`
+    github_link: `https://github.com/sumanpatra-123`,
+    year: '2018'
   },
   {
     id: 3,
@@ -32,7 +34,8 @@ export const club_member_details = [
     member_type: 'Representative',
     profile_img: 'https://avatars.githubusercontent.com/u/66204882?v=4',
     linkedln_link: `https://www.linkedin.com/in/sutari-sunil-reddy-b80796196/`,
-    github_link: `https://github.com/Sunilreddy0`
+    github_link: `https://github.com/Sunilreddy0`,
+    year: '2018'
   },
   {
     id: 5,
@@ -43,7 +46,8 @@ export const club_member_details = [
     member_type: 'Core Member',
     profile_img: 'https://avatars.githubusercontent.com/u/83214495?v=4',
     linkedln_link: `https://www.linkedin.com/in/ayush-gupta-557175158`,
-    github_link: `https://github.com/ayushgupta536`
+    github_link: `https://github.com/ayushgupta536`,
+    year: '2019'
   },
   {
     id: 4,
@@ -52,6 +56,7 @@ export const club_member_details = [
     description: `interest for Networking and Cloud Computing.`,
     member_type: 'Core Member',
     github_link: `https://github.com/patrasubhasis/`,
+    year: '2019'
   },
   {
     id: 5,
@@ -62,7 +67,8 @@ export const club_member_details = [
     member_type: 'Core Member',
     profile_img: 'https://avatars.githubusercontent.com/u/93202107?v=4',
     linkedln_link: `https://www.linkedin.com/in/vikas-kumar-3496501aa/`,
-    github_link: `https://github.com/Vikas1211K`
+    github_link: `https://github.com/Vikas1211K`,
+    year: '2019'
   },
   {
     id: 6,
@@ -73,7 +79,8 @@ export const club_member_details = [
     member_type: 'Core Member',
     profile_img: '',
     linkedln_link: `www.linkedin.com/in/pradiptabehera/`,
-    github_link: `https://github.com/PradiptaBehera8558`
+    github_link: `https://github.com/PradiptaBehera8558`,
+    year: '2019'
   },
   {
     id: 7,
@@ -84,7 +91,8 @@ export const club_member_details = [
     member_type: 'Core Member',
     profile_img: 'https://avatars.githubusercontent.com/u/61120029?v=4',
     linkedln_link: `https://www.linkedin.com/in/nishan-tripathy-67a935195`,
-    github_link: `https://github.com/nishankumartripathy`
+    github_link: `https://github.com/nishankumartripathy`,
+    year: '2018'
   },
   {
     id: 7,
@@ -95,6 +103,7 @@ export const club_member_details = [
     member_type: 'Core Member',
     profile_img: 'https://avatars.githubusercontent.com/u/73764750?v=4',
     linkedln_link: `https://www.linkedin.com/in/subha-das-5a7807195/`,
-    github_link: `https://github.com/su-d`
+    github_link: `https://github.com/su-d`,
+    year: '2018'
   }
 ];
