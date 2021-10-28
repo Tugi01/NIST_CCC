@@ -2,16 +2,16 @@ import React, { useContext } from 'react'
 import Navbar from './Component/Navigation/Navbar';
 import SideBar from './Component/Navigation/SideBar'
 import Home from './Pages/Home';
+import { Switch, Route } from 'react-router-dom';
+import { GlobalContext } from './Context';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { GlobalContext } from './Context';
-import { Switch, Route } from 'react-router-dom';
 import AboutUs from './Pages/AboutUs';
 import Error from './Pages/Error';
 import Tech from './Pages/Tech';
 import Members from './Pages/Members/Members';
 import Contact from './Pages/Contact';
-import Footer from './Component/Footer';
+import Footer from './Component/Footer/Footer';
 import MemberBrief from './Pages/Members/MemberBrief';
 import EventPage from './Pages/Events/EventPage/EventPage';
 

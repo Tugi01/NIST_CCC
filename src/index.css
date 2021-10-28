@@ -361,16 +361,15 @@ body{
 .contact_card input:focus{
   background-color: whitesmoke;
   box-shadow: none;
-  border-bottom: 2.5px solid salmon;
+  border-bottom: 3px solid #348AC7;
 }
 .contact_card textarea:focus{
   background-color: whitesmoke;
   box-shadow: none;
 }
 .contact_btn{
-  border: 3px solid;
+  border: 3px solid #333;
   margin: 20px 0px;
-  height: 50px;
   border-radius: 10px;
   color: #333333;
   font-weight: bold;
@@ -378,14 +377,15 @@ body{
   display: flex;
   justify-content: center;
   background: transparent;
-  padding: 10px;
+  padding: 12px 10px;
 }
 .contact_btn:hover{
-  background-color: #170A59;
+  background-color: #170A59!important;
   color: white;
 }
 .contact_btn:focus{
   box-shadow: none;
+  background-color: #fff!important;
 }
 
 @media only screen and (max-width: 990px) {
