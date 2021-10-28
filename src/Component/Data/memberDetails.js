@@ -41,7 +41,7 @@ export const club_member_details = [
     id: 5,
     firstname: 'AYUSH',
     fullname: 'AYUSH GUPTA',
-    description: `interest for Android App Development and Cloud Computing.`,
+    description: `interest for Android App Development and Cloud Computing.',
     desgination: 'Android devloper',
     member_type: 'Core Member',
     profile_img: 'https://avatars.githubusercontent.com/u/83214495?v=4',
@@ -54,8 +54,11 @@ export const club_member_details = [
     firstname: 'Subhasis',
     fullname: 'Subhasis Patra',
     description: `interest for Networking and Cloud Computing.`,
+    desgination: '',
     member_type: 'Core Member',
-    github_link: `https://github.com/patrasubhasis/`,
+    profile_img: '',
+    linkedln_link: '',
+    github_link: `https://github.com/patrasubhasis/`
     year: '2019'
   },
   {
@@ -95,16 +98,27 @@ export const club_member_details = [
     year: '2018'
   },
   {
-    id: 7,
-    firstname: 'Subha',
-    fullname: 'Subha Das',
-    description: `interest in Machine Learning and AI.`,
-    desgination: 'Software developer',
+    id: 8,
+    firstname:'Asutosh',
+    fullname: 'Asutosh Das',
+    description: `interest for web development and Cloud Computing and machine learing`,
+    desgination: 'Frontend developer',
     member_type: 'Core Member',
     profile_img: 'https://avatars.githubusercontent.com/u/73764750?v=4',
     linkedln_link: `https://www.linkedin.com/in/subha-das-5a7807195/`,
     github_link: `https://github.com/su-d`,
     year: '2018'
+  },
+  {
+    id: 10,
+    firstname: 'Samir',
+    fullname: 'Samir Gouda',
+    description: `Enthusiasts in Cloud Computing.Currently exploring on Machine Learning field.`,
+    desgination: 'Machine Learning Learner',
+    member_type: 'Core Member',
+    profile_img: 'https://avatars.githubusercontent.com/u/64476238?v=4',
+    linkedln_link: `https://www.linkedin.com/in/samir-gouda-a70b461a6`,
+    github_link: `https://github.com/samir282`,
   },
   {
     id: 9,
@@ -117,6 +131,30 @@ export const club_member_details = [
     linkedln_link: `https://www.linkedin.com/in/vinati-perikala-1630481b9/`,
     github_link: `https://github.com/Vinati098`,
     year: '2019'
+  },
+  {
+    id: 8,
+    firstname: 'Soumya',
+    fullname: 'Soumyajeet Khuntia',
+    description: `interest in coding leads to problem solver using different programming language and into the 
+    cloud computing domain`,
+    desgination: 'Software developer',
+    member_type: 'Core Member',
+    profile_img: 'https://avatars.githubusercontent.com/u/70887993?v=4',
+    linkedln_link: `https://www.linkedin.com/in/soumyajeet-khuntia-a68855160/`,
+    github_link: `https://github.com/Soumyajeet02`,
+    year: '2018'
   }
-  
+  {
+    id: 8,
+    firstname: 'Sital',
+    fullname: 'Sital Khadanga',
+    description: `interest in Machine Learning and data analysis.`,
+    desgination: 'Software developer',
+    member_type: 'Core Member',
+    profile_img: 'https://avatars.githubusercontent.com/u/85921948?v=4',
+    linkedln_link: `https://www.linkedin.com/in/sital-khadanga-7562271b1/`,
+    github_link: `https://github.com/sitalkhadanga`,
+    year: '2018'
+  }
 ];
