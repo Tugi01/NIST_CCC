@@ -1,13 +1,19 @@
 .event--page--section{
-  margin-top: 5%;
-}
-.event--page{
-  height: 400px;
-  margin-bottom: 15%;
-  text-align: center;
-  border-radius: 10px;
-}
-.event--page h1{
   margin-top: 10%;
-  padding: 50px 0px;
+}
+.event--page--section h2{
+  font-size: 35px;
+  font-weight: bold;
+  color: #333;
+}
+.event--filter{
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  margin-top: 15px;
+}
+.event--filter .filter--nav--link{
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
 }
