@@ -385,6 +385,7 @@ body{
 }
 .contact_btn:focus{
   box-shadow: none;
+  color: #333;
   background-color: #fff!important;
 }
 
