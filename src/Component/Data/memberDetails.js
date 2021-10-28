@@ -104,10 +104,10 @@ export const club_member_details = [
     description: `interest for web development and Cloud Computing and machine learing`,
     desgination: 'Frontend developer',
     member_type: 'Core Member',
-    profile_img: 'https://avatars.githubusercontent.com/u/73764750?v=4',
-    linkedln_link: `https://www.linkedin.com/in/subha-das-5a7807195/`,
-    github_link: `https://github.com/su-d`,
-    year: '2018'
+    profile_img: 'https://avatars.githubusercontent.com/u/87987600?v=4',
+    linkedln_link: `https://www.linkedin.com/in/asutosh-das-082b5419a`,
+    github_link: `https://github.com/asu2002`,
+    year: '2019'
   },
   {
     id: 10,
@@ -119,6 +119,18 @@ export const club_member_details = [
     profile_img: 'https://avatars.githubusercontent.com/u/64476238?v=4',
     linkedln_link: `https://www.linkedin.com/in/samir-gouda-a70b461a6`,
     github_link: `https://github.com/samir282`,
+    year: '2018'
+  },
+  {
+    id: 7,
+    firstname: 'Subha',
+    fullname: 'Subha Das',
+    description: `interest in Machine Learning and AI.`,
+    desgination: 'Software developer',
+    member_type: 'Core Member',
+    profile_img: 'https://avatars.githubusercontent.com/u/73764750?v=4',
+    linkedln_link: `https://www.linkedin.com/in/subha-das-5a7807195/`,
+    github_link: `https://github.com/su-d`,
     year: '2018'
   },
   {
