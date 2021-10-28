@@ -41,7 +41,7 @@ export const club_member_details = [
     id: 5,
     firstname: 'AYUSH',
     fullname: 'AYUSH GUPTA',
-    description: `interest for Android App Development and Cloud Computing.',
+    description: `interest for Android App Development and Cloud Computing.`,
     desgination: 'Android devloper',
     member_type: 'Core Member',
     profile_img: 'https://avatars.githubusercontent.com/u/83214495?v=4',
@@ -58,7 +58,7 @@ export const club_member_details = [
     member_type: 'Core Member',
     profile_img: '',
     linkedln_link: '',
-    github_link: `https://github.com/patrasubhasis/`
+    github_link: `https://github.com/patrasubhasis/`,
     year: '2019'
   },
   {
@@ -119,6 +119,7 @@ export const club_member_details = [
     profile_img: 'https://avatars.githubusercontent.com/u/64476238?v=4',
     linkedln_link: `https://www.linkedin.com/in/samir-gouda-a70b461a6`,
     github_link: `https://github.com/samir282`,
+    year: '2018'
   },
   {
     id: 9,
@@ -144,7 +145,7 @@ export const club_member_details = [
     linkedln_link: `https://www.linkedin.com/in/soumyajeet-khuntia-a68855160/`,
     github_link: `https://github.com/Soumyajeet02`,
     year: '2018'
-  }
+  },
   {
     id: 8,
     firstname: 'Sital',
