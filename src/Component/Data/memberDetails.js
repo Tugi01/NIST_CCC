@@ -41,7 +41,7 @@ export const club_member_details = [
     id: 5,
     firstname: 'AYUSH',
     fullname: 'AYUSH GUPTA',
-    description: `interest for Android App Development and Cloud Computing.`,
+    description: `interest for Android App Development and Cloud Computing.',
     desgination: 'Android devloper',
     member_type: 'Core Member',
     profile_img: 'https://avatars.githubusercontent.com/u/83214495?v=4',
@@ -54,8 +54,11 @@ export const club_member_details = [
     firstname: 'Subhasis',
     fullname: 'Subhasis Patra',
     description: `interest for Networking and Cloud Computing.`,
+    desgination: '',
     member_type: 'Core Member',
-    github_link: `https://github.com/patrasubhasis/`,
+    profile_img: '',
+    linkedln_link: '',
+    github_link: `https://github.com/patrasubhasis/`
     year: '2019'
   },
   {
@@ -95,11 +98,11 @@ export const club_member_details = [
     year: '2018'
   },
   {
-    id: 7,
-    firstname: 'Subha',
-    fullname: 'Subha Das',
-    description: `interest in Machine Learning and AI.`,
-    desgination: 'Software developer',
+    id: 8,
+    firstname:'Asutosh',
+    fullname: 'Asutosh Das',
+    description: `interest for web development and Cloud Computing and machine learing`,
+    desgination: 'Frontend developer',
     member_type: 'Core Member',
     profile_img: 'https://avatars.githubusercontent.com/u/73764750?v=4',
     linkedln_link: `https://www.linkedin.com/in/subha-das-5a7807195/`,
