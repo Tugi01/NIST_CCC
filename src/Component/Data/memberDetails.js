@@ -83,10 +83,9 @@ export const club_member_details = [
     desgination: 'Software developer',
     member_type: 'Core Member',
     profile_img: 'https://avatars.githubusercontent.com/u/61120029?v=4',
-    linkedln_link: `www.linkedin.com/in/nishan-tripathy-67a935195`,
+    linkedln_link: `https://www.linkedin.com/in/nishan-tripathy-67a935195`,
     github_link: `https://github.com/nishankumartripathy`
   },
-
   {
     id: 7,
     firstname: 'Subha',
