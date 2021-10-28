@@ -85,5 +85,17 @@ export const club_member_details = [
     profile_img: 'https://avatars.githubusercontent.com/u/61120029?v=4',
     linkedln_link: `www.linkedin.com/in/nishan-tripathy-67a935195`,
     github_link: `https://github.com/nishankumartripathy`
+  },
+
+  {
+    id: 7,
+    firstname: 'Subha',
+    fullname: 'Subha Das',
+    description: `interest in Machine Learning and AI.`,
+    desgination: 'Software developer',
+    member_type: 'Core Member',
+    profile_img: 'https://avatars.githubusercontent.com/u/73764750?v=4',
+    linkedln_link: `https://www.linkedin.com/in/subha-das-5a7807195/`,
+    github_link: `https://github.com/su-d`
   }
 ];
