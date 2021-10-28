@@ -38,7 +38,7 @@ export const club_member_details = [
     id: 5,
     firstname: 'AYUSH',
     fullname: 'AYUSH GUPTA',
-    description: `interest for Android App Development and Cloud Computing.',
+    description: `interest for Android App Development and Cloud Computing.`,
     desgination: 'Android devloper',
     member_type: 'Core Member',
     profile_img: 'https://avatars.githubusercontent.com/u/83214495?v=4',
