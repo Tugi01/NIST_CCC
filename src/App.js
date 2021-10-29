@@ -29,9 +29,9 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/aboutus" component={AboutUs} />
-        <Route exact path="/events" component={EventPage} />
-        <Route path="/events/upcoming" component={EventPage} />
-        <Route path="/events/previous" component={EventPage} />
+        <Route exact path="/events-all" component={EventPage} />
+        <Route path="/events-upcoming" component={EventPage} />
+        <Route path="/events-previous" component={EventPage} />
         <Route exact path="/members" component={Members} />
         <Route path="/members/brief" component={MemberBrief} />
         <Route path="/tech" component={Tech} />

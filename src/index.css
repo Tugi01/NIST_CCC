@@ -419,7 +419,7 @@ body{
 
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
 }
 ::-webkit-scrollbar-track {
   background: #348AC7;

@@ -8,15 +8,15 @@ const EventPage = () => {
 
 
   return <section className="container event--page--section">
-    <h2 className="">Event Page</h2>
+    <h1 className="mb-3">Event Page</h1>
     <article className="event--filter">
-      <NavLink to="/events" className="filter--nav--link">
+      <NavLink to="/events-all" activeClassName="text-info" className="filter--nav--link">
         <p>All Events</p>
       </NavLink>
-      <NavLink to="/events/previous" className="filter--nav--link">
+      <NavLink to="/events-previous" activeClassName="text-info" className="filter--nav--link">
         <p>Previous</p>
       </NavLink>
-      <NavLink to="/events/upcoming" className="filter--nav--link">
+      <NavLink to="/events-upcoming" activeClassName="text-info" className="filter--nav--link">
         <p>Upcoming</p>
       </NavLink>
     </article>

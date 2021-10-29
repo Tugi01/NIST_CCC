@@ -10,7 +10,7 @@ const SideBar = () => {
 
   const Item = [
     { text: 'AboutUs', path: '/aboutus' },
-    { text: 'Events', path: '/events' },
+    { text: 'Events', path: '/events-all' },
     { text: 'Members', path: '/members' },
     { text: 'Tech', path: '/tech' },
     { text: 'Hire me', path: '/hire-me' },
