@@ -53,7 +53,6 @@ const Members = () => {
   }, [loader]);
 
 
-
   return <section className="container member--section">
     <article className="operation--members">
       <div className="text-center">
