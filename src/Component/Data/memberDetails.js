@@ -177,7 +177,7 @@ export const club_member_details = [
     description: `interest in Cloud and Stock market`,
     desgination: 'Software developer',
     member_type: 'Core Member',
-    profile_img: '',
+    profile_img: 'https://avatars.githubusercontent.com/u/46805770?v=4',
     linkedln_link: `https://www.linkedin.com/in/ashishisone/`,
     github_link: `https://github.com/ashishacker49`,
     year: '2018'
