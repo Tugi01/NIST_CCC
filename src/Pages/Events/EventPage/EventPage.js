@@ -4,6 +4,9 @@ import '../events.css';
 import EventDetails from './EventDetails';
 
 const EventPage = () => {
+  document.title = 'NIST CCC | Events';
+
+
   return <section className="container event--page--section">
     <h2 className="">Event Page</h2>
     <article className="event--filter">

@@ -7,6 +7,7 @@ import Events from './Events/Events'
 
 const Home = () => {
   document.body.style.backgroundColor = 'white';
+  document.title = 'NIST CCC | Home';
 
 
   const someFun1 = () => {

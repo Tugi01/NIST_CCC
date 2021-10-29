@@ -12,6 +12,8 @@ const Members = () => {
   const [details] = useState(club_member_details);
   const [operate, setOperate] = useState(false);
   const [loader, setLoader] = useState(true);
+  document.title = 'NIST CCC | Members';
+
 
 
 
