@@ -33,7 +33,7 @@ const Members = () => {
 
       return <Link key={i} to="/members/brief" onClick={() => setMemberDetails(item)} className="link_to_brief">
         <div className="card member--div" data-aos="zoom-in-up" data-aos-easing="ease-in-sine"
-          data-aos-duration="700">
+          data-aos-duration="600">
           <div className="member--img">
             <img className="card-img-top" src={images} alt="Card cap" />
             <p>{firstname}</p>

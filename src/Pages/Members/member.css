@@ -17,6 +17,7 @@
   }
   .president--section{
     margin-top: 0px!important;
+    margin-bottom: 0%!important;
   }
 }
 .member--section{
@@ -74,11 +75,11 @@
   width: 16rem;
   border-radius: 8px;
   border: none;
-  transition: 0.2s all ease-in-out;
+  transition: 0.5s all ease-in-out!important;
 }
 .member--div:hover{
   cursor: pointer;
-  transform: translateY(-5px);
+  transform: translateY(-10px)!important;
 }
 .member--div .member--img{
   position: relative;
