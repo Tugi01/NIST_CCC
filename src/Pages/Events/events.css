@@ -17,3 +17,35 @@
   color: #000;
   text-decoration: none;
 }
+.event--details--section{
+ display: flex;
+ justify-content: center; 
+ text-align: left;
+}
+.event--card{
+  padding: 20px;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  position: relative;
+}
+.event--card .badge{
+  position: absolute;
+  right: 0%;
+  letter-spacing: 2px;
+  padding: 8px 20px;
+  font-size: 15px;
+  border-radius: 0;
+  top: 0%;
+  border-bottom-left-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
