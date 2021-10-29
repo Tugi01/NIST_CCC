@@ -169,5 +169,17 @@ export const club_member_details = [
     linkedln_link: `https://www.linkedin.com/in/sital-khadanga-7562271b1/`,
     github_link: `https://github.com/sitalkhadanga`,
     year: '2018'
-  }
+  },
+  {
+    id: 8,
+    firstname: 'Ashish',
+    fullname: 'Ashish Kumar',
+    description: `interest in Cloud and Stock market`,
+    desgination: 'Software developer',
+    member_type: 'Core Member',
+    profile_img: '',
+    linkedln_link: `https://www.linkedin.com/in/ashishisone/`,
+    github_link: `https://github.com/ashishacker49`,
+    year: '2018'
+  },
 ];
