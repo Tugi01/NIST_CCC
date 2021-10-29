@@ -6,7 +6,7 @@ export const club_member_details = [
     description: `Loved to build Serverless Scaleable Web
     applications on Cloud. So, far I learned and worked on how to Build Serverless Scaleable, MERN/full-stack
     web apps, and APIs.`,
-    desgination: 'Cloud Native Developer',
+    desgination: 'Full Stack Web & Cloud Native Developer',
     member_type: 'Representative',
     profile_img: 'https://avatars.githubusercontent.com/u/52108126?v=4',
     linkedln_link: `https://www.linkedin.com/in/debarshi-mondal-developer/`,
@@ -30,7 +30,7 @@ export const club_member_details = [
     firstname: 'Sunil',
     fullname: 'Sutari Sunil reddy',
     description: `interest for Android App Development,Graphics Design and Cloud Computing.`,
-    desgination: 'Android App Developer and Graphics Designer',
+    desgination: 'Android App Developer & Graphics Designer',
     member_type: 'Representative',
     profile_img: 'https://avatars.githubusercontent.com/u/66204882?v=4',
     linkedln_link: `https://www.linkedin.com/in/sutari-sunil-reddy-b80796196/`,

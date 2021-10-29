@@ -37,7 +37,7 @@ const MemberBrief = () => {
         </p>
         <h2 className='name'>{memberDetails.fullname} </h2>
         <p>{memberDetails.desgination}</p>
-        <article>
+        <article className="desc">
           {memberDetails.description && memberDetails.description.substring(0, 200)}
         </article>
         <article className="socail--ids">

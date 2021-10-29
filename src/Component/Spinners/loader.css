@@ -1,3 +1,26 @@
+.spinner{
+  text-align: center;
+  animation: rotating 2s linear infinite;
+  border-radius: 50%;
+  margin-top: 10%;
+  height: 100%;
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 900px) {
+  .spinner img{
+    width: 60px;
+    height: 90px;
+  }
+}
+
+
 .lds-ring {
   text-align: center;
   display: flex;
