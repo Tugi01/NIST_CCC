@@ -133,6 +133,19 @@ export const club_member_details = [
     github_link: `https://github.com/su-d`,
     year: '2018'
   },
+  
+  {
+    id: 10,
+    firstname: 'Sai',
+    fullname: 'P Sai Kumar',
+    description: `interest in Development,Designing and Analytics`,
+    desgination: 'Software developer',
+    member_type: 'Core Member',
+    profile_img: 'https://avatars.githubusercontent.com/u/73764750?v=4',
+    linkedln_link: `https://www.linkedin.com/in/subha-das-5a7807195/`,
+    github_link: `https://github.com/su-d`,
+    year: '2018'
+  },
   {
     id: 9,
     firstname: 'Vinati',
