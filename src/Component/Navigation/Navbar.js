@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import { GlobalContext } from '../../Context';
 import './Navbar.css';
+import logo from '../../club_logo.png';
 
 
 
@@ -27,7 +28,7 @@ const Navbar = () => {
     <nav className={`navbar ${backColor ? 'navbar--section backColor  shadow-lg' : 'navbar--section'}`}>
       <div className="container-fluid">
         <NavLink className="navbar--brand navbar-brand" to="/">
-          <img width="80" height="100" src="https://i.ibb.co/VBCyyGk/logo-cutted.png" alt="" />
+          <img width="80" height="100" src={logo} alt="" />
         </NavLink>
         <article className="navbar--left">
           <button className="btn" onClick={() => setModalOpen(true)}>

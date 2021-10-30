@@ -2,11 +2,12 @@ import React from 'react'
 import Svg1 from '../Component/SVGs/Svg1'
 import TechWeDrive from '../Component/TechWeDrive'
 import Events from './Events/Events'
-
+import logo from '../club_logo.png';
 
 
 const Home = () => {
   document.body.style.backgroundColor = 'white';
+  document.title = 'NIST CCC | Home';
 
 
   const someFun1 = () => {
@@ -18,8 +19,8 @@ const Home = () => {
       <p><a href="https://www.linkedin.com/company/nist-cloud-computing-club" target="_blank" rel="noreferrer">
         <i className="fab fa-linkedin text-primary"></i>
       </a></p>
-      <p><a href="https://github.com/LENO-DEV/NIST_CCC" target="_blank" rel="noreferrer">
-        <i className="fab fa-github-square"></i>
+      <p><a href="/" rel="noreferrer">
+        <i className="fab fa-instagram"></i>
       </a></p>
       <p><a href="https://www.facebook.com/ccc.nist/" target="_blank" rel="noreferrer">
         <i className="fab fa-facebook-square"></i>
@@ -38,7 +39,7 @@ const Home = () => {
         </button>
       </div>
       <img className="img--home" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-out"
-        width="350" height="500" src="https://i.ibb.co/VBCyyGk/logo-cutted.png" alt=""
+        width="350" height="500" src={logo} alt=""
       />
 
     </div>

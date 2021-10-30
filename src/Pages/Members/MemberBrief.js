@@ -7,7 +7,9 @@ import { GlobalContext } from '../../Context';
 const MemberBrief = () => {
   const history = useHistory();
   const { memberDetails } = useContext(GlobalContext);
-
+  var images = memberDetails.profile_img && memberDetails.profile_img.length > 50
+    ? memberDetails.profile_img
+    : 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/1024px-User-avatar.svg.png'
 
 
 
@@ -24,8 +26,8 @@ const MemberBrief = () => {
         </Link>
       </div>
       <div className="col-md-5 mt-5">
-        <div className="watch_img_card shadow-sm mb-5">
-          <img src={memberDetails.profile_img}
+        <div className="watch_img_card shadow mb-5">
+          <img src={images}
             className="card-img-top" alt="..." />
         </div>
       </div >
@@ -35,12 +37,23 @@ const MemberBrief = () => {
         </p>
         <h2 className='name'>{memberDetails.fullname} </h2>
         <p>{memberDetails.desgination}</p>
-        <article>
-          {memberDetails.description && memberDetails.description.substring(0,200)}
+        <article className="desc">
+          {memberDetails.description && memberDetails.description.substring(0, 200)}
         </article>
         <article className="socail--ids">
-          <p><i className="fab fa-linkedin text-primary"></i></p>
-          <p><i className="fab fa-github-square"></i></p>
+          <p><a rel="noreferrer" href={
+            (memberDetails.linkedln_link && memberDetails.linkedln_link.includes('https'))
+              ? memberDetails.linkedln_link
+              : ''
+          } target="_blank"><i className="fab fa-linkedin text-primary"></i></a>
+          </p>
+          <p><a rel="noreferrer" href={
+            (memberDetails.github_link && memberDetails.github_link.includes('https'))
+              ? memberDetails.github_link
+              : ''
+          } target="_blank">
+            <i className="fab fa-github-square text-dark"></i>
+          </a></p>
         </article>
       </div>
       <div className="col-md-1"></div>
