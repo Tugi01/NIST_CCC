@@ -11,7 +11,6 @@ const Context = ({ children }) => {
   const { pathname } = useLocation();
 
   
-
   useEffect(() => {
     if (modalOpen) {
       document.body.style.overflowY = 'hidden';
