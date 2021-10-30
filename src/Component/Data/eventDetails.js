@@ -6,8 +6,12 @@ export const eventDetails = [
     Laborum deleniti illo culpa adipisci consequatur veniam quo iste!
     Commodi, recusandae harum explicabo id repellat.`,
     date: '26-10-2021',
+    time: '',
     venue: 'Will Update',
-    Days: 1,
+    Days: 2,
+
+
+
     event_type: 'Upcoming',
     check_type: true
   }
