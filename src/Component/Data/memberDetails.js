@@ -195,4 +195,16 @@ export const club_member_details = [
     github_link: `https://github.com/ashishacker49`,
     year: '2018'
   },
+  {
+    id: 8,
+    firstname: 'Ritik',
+    fullname: 'Ritik Kumar',
+    description: `interest for web development and Cloud Computing.`,
+    desgination: 'Web Developer',
+    member_type: 'Core Member',
+    profile_img: 'https://avatars.githubusercontent.com/u/80706708?v=4',
+    linkedln_link: `https://www.linkedin.com/in/ritik-kumar-3a1165225/`,
+    github_link: `https://github.com/ritikkumar04`,
+    year: '2018'
+  }
 ];
