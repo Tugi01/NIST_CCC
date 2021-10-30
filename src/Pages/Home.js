@@ -19,8 +19,8 @@ const Home = () => {
       <p><a href="https://www.linkedin.com/company/nist-cloud-computing-club" target="_blank" rel="noreferrer">
         <i className="fab fa-linkedin text-primary"></i>
       </a></p>
-      <p><a href="https://github.com/LENO-DEV/NIST_CCC" target="_blank" rel="noreferrer">
-        <i className="fab fa-github-square"></i>
+      <p><a href="/" rel="noreferrer">
+        <i className="fab fa-instagram"></i>
       </a></p>
       <p><a href="https://www.facebook.com/ccc.nist/" target="_blank" rel="noreferrer">
         <i className="fab fa-facebook-square"></i>
