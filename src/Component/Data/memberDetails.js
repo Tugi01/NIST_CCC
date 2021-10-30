@@ -34,7 +34,18 @@ export const club_member_details = [
     member_type: 'Representative',
     profile_img: 'https://avatars.githubusercontent.com/u/66204882?v=4',
     linkedln_link: `https://www.linkedin.com/in/sutari-sunil-reddy-b80796196/`,
-    github_link: `https://github.com/Sunilreddy0`,
+    github_link: `https://github.com/Sunilreddy0`
+  },
+  {
+    id: 4,
+    firstname: 'Prasanth',
+    fullname: 'Sriramadasu Prasanth Kumar',
+    description: `Passionate towards data science, devops and cloud computing. Worked on many clouds like AWS, Azure, GCP, OpenStack and automation technologies like devOps.`,
+    desgination: 'Machine Learning, DevOps and Cloud Computing',
+    member_type: 'Core Member',
+    profile_img: '',
+    linkedln_link: `https://www.linkedin.com/in/sriramadasu-prasanth-kumar-917703184/`,
+    github_link: `https://github.com/Sriramadasu`,
     year: '2018'
   },
   {
