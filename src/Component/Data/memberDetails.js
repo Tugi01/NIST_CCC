@@ -218,5 +218,5 @@ export const club_member_details = [
     linkedln_link: `https://www.linkedin.com/in/ritik-kumar-3a1165225/`,
     github_link: `https://github.com/ritikkumar04`,
     year: '2018'
-  }
+  },
 ];
