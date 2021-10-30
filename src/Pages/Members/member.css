@@ -4,20 +4,11 @@
     margin-top: 40%!important;
   }
   .member--section h1{
-    font-size: 25px!important;
-  }
-  .member--section .operate{
-    width: 80%!important;
-    left: 10%!important;
+    margin-bottom: 40px!important;
   }
   .member--section .operation--members{
-    gap: 2em!important;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .president--section{
-    margin-top: 0px!important;
-    margin-bottom: 0%!important;
   }
 }
 .member--section{
@@ -26,7 +17,7 @@
 }
 .member--section .operation--members{
   display: flex;
-  gap: 3em;
+  gap: 2em;
   margin-bottom: 10px;
   flex-direction: row;
   flex-wrap: wrap;
@@ -34,18 +25,18 @@
 .member--section .operation--members div{
   text-align: center!important;
   position: relative;
+  font-family: 'Roboto Slab', serif;
+  font-size: 25px;
+  cursor: pointer;
 }
 .member--section h1{
-  text-decoration: none!important;
+  font-size: 35px;
+  font-weight: bold;
   background: #7474BF; 
-  background: linear-gradient(to left, #348AC7, #7474BF);
+  background: linear-gradient(to right, #348AC7, #7474BF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: transparent;
-  font-weight: bold;
-  font-size: 35px;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
 }
 .member--section .operate{
   border-bottom: 3.5px solid #170A59;
@@ -68,8 +59,7 @@
   text-align: center;
 }
 .president--section{
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 .member--div{
   width: 16rem;

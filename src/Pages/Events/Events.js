@@ -17,7 +17,7 @@ const Events = () => {
           enim quas nisi illo omnis accusamus adipisci ex quia ad.
         </p>
         <article>
-          <Link to="/events">
+          <Link to="/events-upcoming">
             <button className="btn mt-2">
               Checkout...
             </button>

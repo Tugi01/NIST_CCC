@@ -2,7 +2,7 @@ import React from 'react'
 import Svg1 from '../Component/SVGs/Svg1'
 import TechWeDrive from '../Component/TechWeDrive'
 import Events from './Events/Events'
-
+import logo from '../club_logo.png';
 
 
 const Home = () => {
@@ -39,7 +39,7 @@ const Home = () => {
         </button>
       </div>
       <img className="img--home" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-out"
-        width="350" height="500" src="https://i.ibb.co/VBCyyGk/logo-cutted.png" alt=""
+        width="350" height="500" src={logo} alt=""
       />
 
     </div>

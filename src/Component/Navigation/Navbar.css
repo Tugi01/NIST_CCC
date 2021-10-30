@@ -54,6 +54,7 @@
   font-size: 35px;
   transform: rotate(180deg);
   color: #333;
+  text-shadow: 0px 4px 25px 4px #348AC7!important;
 }
 .navbar--section .navbar--left .btn:focus{
   box-shadow: none!important;

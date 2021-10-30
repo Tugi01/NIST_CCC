@@ -56,20 +56,19 @@ const Members = () => {
 
 
   return <section className="container member--section">
+    <h1 className="mb-3">Club Members</h1>
     <article className="operation--members">
       <div className="text-center">
-        <h1 onClick={() => {
-          setOperate(false)
+        <p className={!operate ? 'text-info' : ''} onClick={() => {
+          setOperate(false);
           setLoader(true);
-        }}>Club Members</h1>
-        {!operate ? <p className="operate"></p> : ''}
+        }}>Members</p>
       </div>
       <div>
-        <h1 onClick={() => {
+        <p className={operate ? 'text-info' : ''} onClick={() => {
           setLoader(true)
           setOperate(true);
-        }}>Club Advisor <span  ></span></h1>
-        {operate ? <p className="operate"> </p> : ''}
+        }}>Advisor</p>
       </div>
     </article>
     {loader
@@ -89,7 +88,6 @@ const Members = () => {
             </section>
         }
       </article>
-
     }
   </section>
 }
