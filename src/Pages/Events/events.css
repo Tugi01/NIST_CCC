@@ -172,7 +172,13 @@
   .event--brief--section{
     margin-top: 30%;
   }
+  .event--brief--section h1{
+    font-family: 'Poppins', sans-serif!important;
+  }
   .event--brief--section .event-describe{
+    margin-top: 10%!important;
+  }
+  .event--brief--section .event-describe--registred{
     margin-top: 30%!important;
   }
   .event--brief--section main{
@@ -323,6 +329,7 @@
 }
 .register--btn button:hover{
   transform: translateY(-5px);
+  box-shadow: 0px 4px 25px 4px #348AC7!important;
 }
 .event--brief--section main{
   display: flex;

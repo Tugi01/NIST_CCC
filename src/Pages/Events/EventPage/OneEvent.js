@@ -39,7 +39,7 @@ const OneEvent = () => {
         }
       </main>
       <div className="card shadow  text-center p-0">
-        <p className="event-describe p-4">{value.describe}</p>
+        <p className={`event-describe p-4 ${getUserItem ? 'event-describe--registred' : 'event-describe'}`}>{value.describe}</p>
         <div className="event-extra">
           <p className='badge bg-info'>2 Days Workshops</p>
         </div>
@@ -50,7 +50,7 @@ const OneEvent = () => {
               <span className="registered--badge badge shadow-lg"> Registered 🎉🥳</span>
             </article> : null
           }
-          <div className="timings"  id="view-ticket">
+          <div className="timings" id="view-ticket">
             <br />
             <p className="date"><b>Date:</b> 5<sup>th</sup> - 6<sup>th</sup> of November</p>
             <p><b>Time:</b> 2:30 pm to 5:30pm</p>
