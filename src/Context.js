@@ -8,6 +8,7 @@ const Context = ({ children }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [closeModal, setCloseModal] = useState(false);
   const [memberDetails, setMemberDetails] = useState({});
+  const [registerModal, setRegisterModal] = useState(false);
   const { pathname } = useLocation();
 
   
@@ -30,7 +31,9 @@ const Context = ({ children }) => {
     closeModal,
     setCloseModal,
     memberDetails,
-    setMemberDetails
+    setMemberDetails,
+    setRegisterModal,
+    registerModal
   }}>
     {children}
   </GlobalContext.Provider>
