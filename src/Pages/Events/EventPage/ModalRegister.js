@@ -1,5 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { Modal } from "react-bootstrap";
+import React, { useContext, useState } from 'react';
 import { GlobalContext } from '../../../Context';
 import randomstring from "randomstring";
 import './register.css';
