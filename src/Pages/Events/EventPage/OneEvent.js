@@ -4,6 +4,9 @@ import { eventDetails } from '../../../Component/Data/eventDetails';
 import { GlobalContext } from '../../../Context';
 import ModalRegister from './ModalRegister';
 import ViewTicket from './ViewTicket';
+import Swal from 'sweetalert2';
+import axios from 'axios';
+import { toast } from 'react-toastify';
 
 
 
@@ -14,7 +17,74 @@ const OneEvent = () => {
 
   const someFun1 = () => {
     document.getElementById('view-ticket').scrollIntoView({ behavior: "smooth" });
-  }
+  };
+
+  const check_data = (val) => {
+    var configure = {
+      inputs: {
+        check: "register", email: `${val.trim()}`, verify: true
+      }
+    };
+    var configure_inputs = {
+      stateMachineArn: 'arn:aws:states:ap-south-1:143151111018:stateMachine:NIST_CCC_MACHINE',
+      input: JSON.stringify(configure)
+    };
+    axios({
+      method: 'POST',
+      url: 'https://6svbsfa95h.execute-api.ap-south-1.amazonaws.com/dev',
+      data: JSON.stringify(configure_inputs, null, 2)
+    }).then((el) => {
+      if (el.data && el.data.status === 'SUCCEEDED') {
+        var parseData = JSON.parse(el.data.output)
+        if (parseData.Item) {
+          localStorage.setItem('user_data', JSON.stringify(parseData.Item));
+          toast.success('Successfully Verified!');
+          setTimeout(() => {
+            window.location.reload();
+          }, 1000);
+        } else {
+          toast.info('Register Now!, No user found');
+          setRegisterModal(true);
+        }
+      } else {
+        toast.error('Something Went Wrong!');
+      }
+    })
+  };
+
+
+
+  const open_choose = () => {
+    return Swal.fire({
+      icon: 'info',
+      title: 'What to do?',
+      text: 'Choose one of below option in order to process!',
+      allowOutsideClick: false,
+      showCancelButton: true,
+      cancelButtonText: 'Veiw Ticket',
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Register',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        setRegisterModal(true);
+        Swal.close();
+      } else {
+        Swal.fire({
+          title: 'Input email address',
+          input: 'email',
+          inputLabel: 'Your email address',
+          inputPlaceholder: 'Enter your email address',
+          confirmButtonColor: '#3085d6',
+          confirmButtonText: 'Proceed',
+          allowOutsideClick: false
+        }).then((val) => {
+          console.log(val);
+          check_data(val.value);
+        });
+      }
+    });
+  };
 
   return <section className="container event--brief--section">
     <ModalRegister />
@@ -27,7 +97,7 @@ const OneEvent = () => {
       <main>
         <h1 className='text-left'>{value.name} <i className="fas fa-calendar-check"></i> </h1>
         {
-          getUserItem === null ? <article className="register--btn" onClick={() => setRegisterModal(true)}>
+          getUserItem === null ? <article className="register--btn" onClick={() => open_choose()}>
             <button className="btn btn-primary shadow-lg">
               Register Here &nbsp; <i className="fas fa-plus"></i>
             </button>

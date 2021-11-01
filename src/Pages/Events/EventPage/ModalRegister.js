@@ -65,7 +65,7 @@ const ModalRegister = () => {
     </Modal.Header>
     <Modal.Body>
       <section>
-        <b className="lead p-3">Please provide all details in order to process!</b>
+        <b className="lead"><center>Please provide all details in order to process!</center></b>
       </section>
       <article className="modal-body mt-3">
         <form className={`contact_card`} onSubmit={handleSubmit(sumbit_data)}>

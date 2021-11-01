@@ -4,7 +4,6 @@ import React from 'react'
 const ViewTicket = ({ getItem }) => {
   var items = JSON.parse(getItem);
 
-  console.log(items);
 
 
   return <section className="view--ticket" style={{ marginTop: '-5%' }}>
