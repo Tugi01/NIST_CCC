@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Modal } from "react-bootstrap";
 import { GlobalContext } from '../../../Context';
 import randomstring from "randomstring";
@@ -10,8 +10,9 @@ import { toast } from 'react-toastify';
 import ProcessSpinner from '../../../Component/Spinners/ProcessSpinner';
 
 
-const ModalRegister = () => {
-  const { registerModal } = useContext(GlobalContext);
+
+const ModalRegister = ({ setRegister }) => {
+  const { setDis } = useContext(GlobalContext);
   const { register, handleSubmit, formState: { errors } } = useForm();
   const [load, setLoad] = useState(false);
 
@@ -23,7 +24,6 @@ const ModalRegister = () => {
       length: 6,
       capitalization: 'uppercase'
     })}`;
-
     var configure = {
       inputs: {
         check: "register", email: `${email.trim()}`, name: `${fullname}`, branch: `${branch}`, batch: `${batch}`,
@@ -43,15 +43,21 @@ const ModalRegister = () => {
       if (el.data && el.data.status === 'SUCCEEDED') {
         var parseData = JSON.parse(el.data.output);
         if (parseData.SdkResponseMetadata) {
+          window.scrollTo(0, 0);
           localStorage.setItem('user_data', JSON.stringify({ ticket, ...data }));
           toast.success('Thanks for Registering');
+          setDis(true);
+          setRegister(false);
+          setTimeout(() => {
+            setDis(false);
+          }, 2000);
         } else {
           localStorage.setItem('user_data', JSON.stringify(parseData));
           toast.info('Already Registered!');
+          setTimeout(() => {
+            window.location.reload();
+          }, 2000);
         }
-        setTimeout(() => {
-          window.location.reload();
-        }, 1000);
       } else {
         toast.error('Something Went Wrong!')
       }
@@ -59,19 +65,15 @@ const ModalRegister = () => {
   }
 
 
-  return <Modal dialogClassName="register--section" show={registerModal} backdrop="static" keyboard={false}>
-    <Modal.Header>
-      <Modal.Title><h1 className="mb-0">Register here</h1></Modal.Title>
-    </Modal.Header>
-    <Modal.Body>
-      <section>
-        <b className="lead"><center>Please provide all details in order to process!</center></b>
-      </section>
-      <article className="modal-body mt-3">
+  return <article style={{ display: 'flex', justifyContent: 'center' }}>
+    <main className="card shadow-lg modal--card">
+      <h1>Register Here</h1>
+      <b style={{ marginTop: -50 }} className="p-1 lead"><center>Please provide all details in order to process!</center></b>
+      <article className="modal-body mt-2">
         <form className={`contact_card`} onSubmit={handleSubmit(sumbit_data)}>
           <section className="row">
             <div className="col-md-6 mb-4">
-              <label className="form-label">Full Name</label>
+              <label className="form-label" id="view-ticket">Full Name</label>
               <input type="text" className="form-control" {...register("fullname", { required: true })} />
               <p>{errors.fullname && <span className="text-danger">This field is required</span>}</p>
             </div>
@@ -120,8 +122,8 @@ const ModalRegister = () => {
         </form>
       </article>
       <br />
-    </Modal.Body>
-  </Modal>
+    </main>
+  </article>
 }
 
 export default ModalRegister;

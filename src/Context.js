@@ -10,6 +10,8 @@ const Context = ({ children }) => {
   const [memberDetails, setMemberDetails] = useState({});
   const [registerModal, setRegisterModal] = useState(false);
   const { pathname } = useLocation();
+  const [dis, setDis] = useState(false);
+
 
   
   useEffect(() => {
@@ -26,6 +28,8 @@ const Context = ({ children }) => {
 
 
   return <GlobalContext.Provider value={{
+    dis,
+    setDis,
     modalOpen,
     setModalOpen,
     closeModal,

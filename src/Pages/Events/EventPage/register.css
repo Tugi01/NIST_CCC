@@ -1,23 +1,27 @@
 @media only screen and (max-width: 990px) {
-  .register--section{
-    max-width: 100%!important;
+  .modal--card{
+    width: 100%!important;
     margin: 20% 10px!important;
+  }
+  .modal--card .contact_card input{
+    width: 100%;
+  }
+  .modal--card h1{
+    text-align: center;
   }
   .modal-title{
     margin-top: 10px;
     text-align: center!important;
   }
 }
-.modal-title{
-  font-family: 'Roboto Slab', serif;
-  margin-top: 10px;
-  width: 100%;
-  padding: 8px 15px;
+.modal--card{
+  padding: 10px;
+  width: 70%;
+  background: white!important;
 }
-.register--section{
-  margin-top: 5%;
-  margin-bottom: 5%;
-  max-width: 60%;
+.modal--card h1{
+  padding: 30px 10px;
+  background-color: antiquewhite!important;
 }
 .modal-content{
   border: none;
@@ -25,6 +29,10 @@
 }
 .col-md-6 .text-danger{
   font-family: cursive;
+}
+.contact_card{
+  padding: 0px 10px;
+  width: 100%;
 }
 .contact_card input{
   font-family: 'Poppins', sans-serif;

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Navbar from './Component/Navigation/Navbar';
 import SideBar from './Component/Navigation/SideBar'
 import Home from './Pages/Home';
@@ -15,17 +15,20 @@ import Footer from './Component/Footer/Footer';
 import MemberBrief from './Pages/Members/MemberBrief';
 import EventPage from './Pages/Events/EventPage/EventPage';
 import OneEvent from './Pages/Events/EventPage/OneEvent';
+import ReactConfetti from 'react-confetti';
 
 
 
 const App = () => {
   AOS.init();
-  const { modalOpen } = useContext(GlobalContext);
+  const { modalOpen, dis } = useContext(GlobalContext);
+
 
 
   return <>
     <SideBar />
     <div className={`${modalOpen ? 'opacity--reduce' : null}`}>
+      {dis ? <ReactConfetti numberOfPieces="200" run={dis} /> : <ReactConfetti numberOfPieces="0" run="false" />}
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />

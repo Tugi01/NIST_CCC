@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import { eventDetails } from '../../../Component/Data/eventDetails';
 import { GlobalContext } from '../../../Context';
@@ -12,12 +12,15 @@ import { toast } from 'react-toastify';
 
 const OneEvent = () => {
   const [value] = useState(eventDetails[0]);
-  const { setRegisterModal } = useContext(GlobalContext);
-  var getUserItem = localStorage.getItem('user_data');
+  const { setDis } = useContext(GlobalContext);
+  const [register, setRegister] = useState(false);
 
+
+  var getUserItem = localStorage.getItem('user_data');
   const someFun1 = () => {
     document.getElementById('view-ticket').scrollIntoView({ behavior: "smooth" });
   };
+
 
   const check_data = (val) => {
     var configure = {
@@ -37,14 +40,15 @@ const OneEvent = () => {
       if (el.data && el.data.status === 'SUCCEEDED') {
         var parseData = JSON.parse(el.data.output)
         if (parseData.Item) {
+          setDis(true);
           localStorage.setItem('user_data', JSON.stringify(parseData.Item));
           toast.success('Successfully Verified!');
           setTimeout(() => {
             window.location.reload();
-          }, 1000);
+          }, 3000);
         } else {
           toast.info('Register Now!, No user found');
-          setRegisterModal(true);
+          setRegister(true);
         }
       } else {
         toast.error('Something Went Wrong!');
@@ -52,9 +56,17 @@ const OneEvent = () => {
     })
   };
 
+  useEffect(() => {
+    if (register) {
+      setTimeout(() => {
+        document.getElementById('view-register').scrollIntoView({ behavior: "smooth" });
+      }, 200);
+    }
+  }, [register]);
 
 
   const open_choose = () => {
+    setRegister(false);
     return Swal.fire({
       icon: 'info',
       title: 'What to do?',
@@ -66,9 +78,9 @@ const OneEvent = () => {
       cancelButtonColor: '#d33',
       confirmButtonText: 'Register',
     }).then((result) => {
+      Swal.close();
       if (result.isConfirmed) {
-        setRegisterModal(true);
-        Swal.close();
+        setRegister(true);
       } else {
         Swal.fire({
           title: 'Input email address',
@@ -79,15 +91,15 @@ const OneEvent = () => {
           confirmButtonText: 'Proceed',
           allowOutsideClick: false
         }).then((val) => {
-          console.log(val);
           check_data(val.value);
         });
       }
     });
   };
 
+
+
   return <section className="container event--brief--section">
-    <ModalRegister />
     <div style={{ margin: '10% 0px' }}>
       <Link to="/events-all" className="link_to_member">
         <article className="event--back_btn">
@@ -127,10 +139,13 @@ const OneEvent = () => {
           </div>
         </article>
         <article className="place">
-          <p className="badge bg-warning">Venue: LHC - 407</p>
+          <p className="badge bg-warning" id="view-register">Venue: LHC - 407</p>
         </article>
       </div>
     </div>
+    {
+      register ? <ModalRegister setRegister={setRegister} /> : null
+    }
     {
       getUserItem ? <ViewTicket getItem={getUserItem} /> : null
     }
