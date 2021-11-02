@@ -23,7 +23,7 @@ import Developer from './Pages/Developer';
 
 const App = () => {
   AOS.init();
-  const { modalOpen, dis } = useContext(GlobalContext);
+  const { modalOpen } = useContext(GlobalContext);
 
 
   return <>
