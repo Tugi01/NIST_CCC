@@ -59,8 +59,8 @@ const OneEvent = () => {
   useEffect(() => {
     if (register) {
       setTimeout(() => {
-        document.getElementById('view-register').scrollIntoView({ behavior: "smooth" });
-      }, 200);
+        window.scrollTo(0, 600);
+      }, 500);
     }
   }, [register]);
 
