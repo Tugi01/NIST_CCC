@@ -46,8 +46,7 @@ const OneEvent = () => {
           toast.success('Successfully Verified!');
           setTimeout(() => {
             setDis(false);
-            // window.location.reload();
-          }, 3500);
+          }, 3000);
         } else {
           toast.info('Register Now!, No user found');
           setRegister(true);
@@ -71,7 +70,7 @@ const OneEvent = () => {
     setRegister(false);
     return Swal.fire({
       icon: 'info',
-      title: 'What to do? 🤔 ',
+      title: 'What to do? 🤔',
       text: 'Choose one of below option in order to process!',
       allowOutsideClick: false,
       showCancelButton: true,
@@ -87,7 +86,7 @@ const OneEvent = () => {
         Swal.fire({
           title: 'Registered Email',
           input: 'email',
-          inputLabel: 'In order to verify you could enter your email address',
+          inputLabel: 'provide your email to verify!',
           inputPlaceholder: 'Enter email address here',
           confirmButtonColor: '#3085d6',
           confirmButtonText: 'Verify',

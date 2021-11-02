@@ -51,6 +51,7 @@ const ModalRegister = ({ setRegister }) => {
             setDis(false);
           }, 2000);
         } else {
+          window.scrollTo(0, 0);
           localStorage.setItem('user_data', JSON.stringify(parseData));
           toast.info('Already Registered!');
           setTimeout(() => {
@@ -63,7 +64,7 @@ const ModalRegister = ({ setRegister }) => {
     })
   };
 
-  
+
 
 
   return <article style={{ display: 'flex', justifyContent: 'center' }}>

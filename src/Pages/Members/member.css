@@ -91,6 +91,7 @@
   letter-spacing: 1px;
   font-family: 'Roboto Slab', serif;
   color: #333;
+  text-transform: uppercase!important;
 }
 .member--div .card-body{
   margin: 0%;
