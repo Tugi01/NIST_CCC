@@ -25,7 +25,7 @@ const OneEvent = () => {
   const check_data = (val) => {
     var configure = {
       inputs: {
-        check: "register", email: `${val.trim()}`, verify: true
+        check: "register", email: `${val.toLowerCase().trim()}`, verify: true
       }
     };
     var configure_inputs = {
@@ -59,7 +59,7 @@ const OneEvent = () => {
   useEffect(() => {
     if (register) {
       setTimeout(() => {
-        window.scrollTo(0, 600);
+        window.scrollTo(0, 700);
       }, 500);
     }
   }, [register]);
@@ -111,7 +111,7 @@ const OneEvent = () => {
         {
           getUserItem === null ? <article className="register--btn" onClick={() => open_choose()}>
             <button className="btn btn-primary shadow-lg">
-              Register Here &nbsp; <i className="fas fa-plus"></i>
+              Register Here &nbsp; <i className={`fas ${!register ? 'fa-plus' : 'fa-caret-down'}`}></i>
             </button>
           </article> : <article className="register--btn" onClick={() => someFun1()}>
             <button className="btn btn-primary shadow-lg" style={{ letterSpacing: 2 }}>

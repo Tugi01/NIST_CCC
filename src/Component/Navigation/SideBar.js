@@ -13,7 +13,7 @@ const SideBar = () => {
     { text: 'AboutUs', path: '/aboutus' },
     { text: 'Events', path: '/events-all' },
     { text: 'Members', path: '/members' },
-    { text: 'Hire me', path: '/hire-me' },
+    { text: 'Hire me', path: '/hiring' },
   ];
 
   const handleClose = (time) => {

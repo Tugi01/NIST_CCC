@@ -25,7 +25,7 @@ const ModalRegister = ({ setRegister }) => {
     })}`;
     var configure = {
       inputs: {
-        check: "register", email: `${email.trim()}`, name: `${fullname}`, branch: `${branch}`, batch: `${batch}`,
+        check: "register", email: `${email.toLowerCase().trim()}`, name: `${fullname}`, branch: `${branch}`, batch: `${batch}`,
         rollno: `${rollno}`, ticket: `${ticket}`, contact: `${contact}`,
       }
     };

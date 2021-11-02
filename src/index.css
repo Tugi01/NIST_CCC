@@ -326,6 +326,9 @@ body{
   color: white;
   letter-spacing: 1px;
 }
+.footer--section .lists a{
+  text-decoration: none!important;
+}
 
 .contact--section{
   margin-top: -22%!important;
@@ -424,6 +427,14 @@ body{
   .error--section{
     margin-top: 40%!important;
   }
+  .privacy--policy{
+    margin-top: 30%!important;
+    width: 90%;
+  }
+  .blogs{
+    margin-top: 30%;
+    padding: 30px;
+  }
 }
 .copyright--section{
   text-align: center;
@@ -463,6 +474,33 @@ body{
 }
 .error--btn button:hover{
   color: #fff;
+}
+
+
+
+
+.privacy--policy{
+  margin-top: 10%;
+  border-radius: 10px;
+  margin-bottom: 15%;
+  padding: 50px;
+}
+.privacy--policy h2{
+  font-family: 'Roboto Slab', serif;
+  background: #7474BF; 
+  background: linear-gradient(to right, #348AC7, #7474BF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: transparent;
+}
+
+.blogs span{
+  font-family: 'Roboto Slab', serif;
+  background: #7474BF; 
+  background: linear-gradient(to right, #348AC7, #7474BF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: transparent;
 }
 
 

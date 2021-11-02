@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import FooterContact from './FooterContact';
 
 
@@ -13,14 +14,14 @@ const Footer = () => {
       </article>
       <div className="row">
         <article className="lists col-md-3">
-          <li>Members</li>
-          <li>Events</li>
-          <li>Privacy Policy</li>
-          <li>Tech</li>
+          <Link to="/members"><li>Members</li></Link>
+          <Link to="/events-all"><li>Events</li></Link>
+          <Link to="/privacy-policy"><li>Privacy</li></Link>
+          <Link to="/tech"><li>Tech</li></Link>
         </article>
         <article className="lists col-md-3">
-          <li>Blogs</li>
-          <li>Hire Me</li>
+          <Link to="/blogs"><li>Blogs</li></Link>
+          <Link to="/hiring"><li>Hiring</li></Link>
         </article>
         <section className="contact--section col-md-5">
           <FooterContact />
