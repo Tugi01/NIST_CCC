@@ -61,7 +61,9 @@ const ModalRegister = ({ setRegister }) => {
         toast.error('Something Went Wrong!')
       }
     })
-  }
+  };
+
+  
 
 
   return <article style={{ display: 'flex', justifyContent: 'center' }}>

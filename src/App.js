@@ -18,19 +18,22 @@ import ReactConfetti from 'react-confetti';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
 import Hiring from './Pages/Hiring';
 import Blogs from './Pages/Blogs';
+import { useWindowSize } from 'react-use';
+import Developer from './Pages/Developer';
 
 
 
 const App = () => {
   AOS.init();
   const { modalOpen, dis } = useContext(GlobalContext);
-
+  const { width, height } = useWindowSize();
 
 
   return <>
     <SideBar />
     <div className={`${modalOpen ? 'opacity--reduce' : null}`}>
-      {dis ? <ReactConfetti numberOfPieces="250" run={dis} /> : <ReactConfetti numberOfPieces="0" run="false" />}
+      {dis ? <ReactConfetti width={width}
+        height={height} numberOfPieces="250" run={dis} /> : <ReactConfetti numberOfPieces="0" run="false" />}
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
@@ -45,6 +48,7 @@ const App = () => {
         <Route path="/blogs" component={Blogs} />
         <Route path="/hiring" component={Hiring} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />
+        <Route path="/developer" component={Developer} />
         <Route path="*" component={Error} />
       </Switch>
       <Footer />

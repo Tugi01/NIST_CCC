@@ -22,6 +22,7 @@ const Footer = () => {
         <article className="lists col-md-3">
           <Link to="/blogs"><li>Blogs</li></Link>
           <Link to="/hiring"><li>Hiring</li></Link>
+          <Link to="/developer"><li>Developer</li></Link>
         </article>
         <section className="contact--section col-md-5">
           <FooterContact />

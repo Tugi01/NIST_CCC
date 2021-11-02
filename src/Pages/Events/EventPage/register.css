@@ -72,6 +72,34 @@
   font-size: 22px;
 }
 
+
+
 .view--ticket .card{
   background: #7474BF!important;
+  padding: 30px!important;
+}
+.view--ticket h2{
+  text-align: center;
+  margin-bottom: 20px!important;
+}
+.view--ticket h2 span{
+  color: aliceblue;
+  font-family: 'Roboto Slab', serif;
+}
+.view--ticket p{
+  font-size: 20px;
+}
+.view--ticket p span{
+  color: azure;
+  padding: 0px 10px;
+  letter-spacing: 1px;
+  font-family: 'Roboto Slab', serif;
+}
+.ticket--card--info{
+  text-transform: capitalize;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  gap: 2em;
 }
