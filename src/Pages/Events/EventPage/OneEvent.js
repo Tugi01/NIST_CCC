@@ -7,12 +7,13 @@ import ViewTicket from './ViewTicket';
 import Swal from 'sweetalert2';
 import axios from 'axios';
 import { toast } from 'react-toastify';
+import ReactConfetti from 'react-confetti/dist/react-confetti';
 
 
 
 const OneEvent = () => {
   const [value] = useState(eventDetails[0]);
-  const { setDis } = useContext(GlobalContext);
+  const { setDis, dis } = useContext(GlobalContext);
   const [register, setRegister] = useState(false);
 
 
@@ -44,7 +45,8 @@ const OneEvent = () => {
           localStorage.setItem('user_data', JSON.stringify(parseData.Item));
           toast.success('Successfully Verified!');
           setTimeout(() => {
-            window.location.reload();
+            setDis(false);
+            // window.location.reload();
           }, 3500);
         } else {
           toast.info('Register Now!, No user found');
@@ -100,6 +102,7 @@ const OneEvent = () => {
 
 
   return <section className="container event--brief--section">
+    {dis ? <ReactConfetti numberOfPieces="250" run={dis} /> : <ReactConfetti numberOfPieces="0" run="false" />}
     <div style={{ margin: '10% 0px' }}>
       <Link to="/events-all" className="link_to_member">
         <article className="event--back_btn">

@@ -14,11 +14,9 @@ import Footer from './Component/Footer/Footer';
 import MemberBrief from './Pages/Members/MemberBrief';
 import EventPage from './Pages/Events/EventPage/EventPage';
 import OneEvent from './Pages/Events/EventPage/OneEvent';
-import ReactConfetti from 'react-confetti';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
 import Hiring from './Pages/Hiring';
 import Blogs from './Pages/Blogs';
-import { useWindowSize } from 'react-use';
 import Developer from './Pages/Developer';
 
 
@@ -26,14 +24,11 @@ import Developer from './Pages/Developer';
 const App = () => {
   AOS.init();
   const { modalOpen, dis } = useContext(GlobalContext);
-  const { width, height } = useWindowSize();
 
 
   return <>
     <SideBar />
     <div className={`${modalOpen ? 'opacity--reduce' : null}`}>
-      {dis ? <ReactConfetti width={width}
-        height={height} numberOfPieces="250" run={dis} /> : <ReactConfetti numberOfPieces="0" run="false" />}
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
