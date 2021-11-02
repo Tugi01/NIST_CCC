@@ -18,16 +18,16 @@ const SelectBox = ({ errors, register }) => {
   ];
 
 
-  return <section className="row" style={{marginTop: -10}}>
+  return <section className="row" style={{ marginTop: -10 }}>
     <div className={`select--box-1 col-md-6 mb-4 ${(errors.batch || errors.branch) ? 'select--box-1--modify' : 'select--box-1'}`}>
       <label className="form-label">Choose Batch</label>
       <i className="fas fa-sort-down"></i>
       <select className="form-control" name="" id="" {...register("batch", { required: true })} >
         <option value="">Select</option>
         {
-          year_wise.map((item) => {
+          year_wise.map((item, i) => {
             const { name, value } = item;
-            return <option value={value}>{name}</option>
+            return <option key={i} value={value}>{name}</option>
           })
         }
       </select>
@@ -39,9 +39,9 @@ const SelectBox = ({ errors, register }) => {
       <select className="form-control" {...register("branch", { required: true })} >
         <option value="">Select</option>
         {
-          branch_wise.map((item) => {
+          branch_wise.map((item, i) => {
             const { name, value } = item;
-            return <option value={value}>{name}</option>
+            return <option key={i} value={value}>{name}</option>
           })
         }
       </select>
