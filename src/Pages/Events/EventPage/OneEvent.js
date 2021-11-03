@@ -99,9 +99,10 @@ const OneEvent = () => {
   };
 
 
+  console.log(dis);
 
   return <section className="container event--brief--section">
-    {dis ? <ReactConfetti numberOfPieces="250" run={dis} /> : <ReactConfetti numberOfPieces="0" run="false" />}
+    <ReactConfetti numberOfPieces={dis ? 250 : 0} run={true} />
     <div style={{ margin: '10% 0px' }}>
       <Link to="/events-all" className="link_to_member">
         <article className="event--back_btn">
