@@ -1,11 +1,27 @@
 import React from 'react'
 
+
 const Developer = () => {
-  return <section className="blogs container">
-    <div className="card p-5  shadow-lg text-center"
-      style={{ marginTop: '20%', marginBottom: '20%', borderRadius: 20, border: 'none' }}>
-      <h1> <span>Developer</span> Updating Soon... &nbsp; <i className="far fa-smile"></i> </h1>
-    </div>
+  return <section className="developer--section container">
+    {/* <h1> <span>Developer</span> Updating Soon... &nbsp; <i className="far fa-smile"></i> </h1> */}
+    <article className="card shadow">
+      <img src="https://avatars.githubusercontent.com/u/52108126?v=4" alt="developer" />
+      <div>
+        <h1>Debarshi Mondal</h1>
+      </div>
+      <section className="developer--text">
+        <h3>Developer</h3>
+      </section>
+    </article>
+    <article className="card shadow">
+      <img src="https://avatars.githubusercontent.com/u/52108126?v=4" alt="desginer" />
+      <div className="">
+        <h1>Sutari Sunil Reddy</h1>
+      </div>
+      <section className="developer--text">
+        <h3>Designer</h3>
+      </section>
+    </article>
   </section>
 }
 

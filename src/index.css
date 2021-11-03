@@ -479,6 +479,41 @@ body{
 
 
 
+.developer--section{
+  margin-top: 15%;
+  margin-bottom: 20%;
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.developer--section article{
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+}
+.developer--section article  img{
+  border-radius: 20px;
+  padding: 15px;
+}
+.developer--section article div{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.developer--section article  h1{
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  background-color: #fff;
+  padding: 8px 25px;
+  position: absolute;
+  bottom: 0%;
+  border-radius: 8px;
+}
+
+
+
+
 .privacy--policy{
   margin-top: 10%;
   border-radius: 10px;
