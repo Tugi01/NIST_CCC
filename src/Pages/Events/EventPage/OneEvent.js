@@ -41,9 +41,9 @@ const OneEvent = () => {
       if (el.data && el.data.status === 'SUCCEEDED') {
         var parseData = JSON.parse(el.data.output)
         if (parseData.Item) {
-          setDis(true);
           localStorage.setItem('user_data', JSON.stringify(parseData.Item));
           toast.success('Successfully Verified!');
+          setDis(true);
           setTimeout(() => {
             setDis(false);
           }, 3000);
@@ -90,9 +90,13 @@ const OneEvent = () => {
           inputPlaceholder: 'Enter email address here',
           confirmButtonColor: '#3085d6',
           confirmButtonText: 'Verify',
-          allowOutsideClick: false
+          allowOutsideClick: false,
+          showLoaderOnConfirm: true,
+          preConfirm: (login) => {
+            return check_data(login)
+          }
         }).then((val) => {
-          check_data(val.value);
+          console.log(val);
         });
       }
     });
