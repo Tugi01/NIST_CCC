@@ -92,7 +92,7 @@ export const club_member_details = [
     description: `Enthusiast in AI and Computer Vision Research`,
     desgination: 'Data Analyst',
     member_type: 'Core Member',
-    profile_img: '',
+    profile_img: 'https://avatars.githubusercontent.com/u/77044609?v=4',
     linkedln_link: `www.linkedin.com/in/pradiptabehera/`,
     github_link: `https://github.com/PradiptaBehera8558`,
     year: '2019'
