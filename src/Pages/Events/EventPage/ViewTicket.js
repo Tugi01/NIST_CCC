@@ -15,8 +15,6 @@ const ViewTicket = ({ getItem }) => {
           <p><b>Name: </b> <span>{(items.name && items.name.S) ? items.name.S : items.fullname}</span></p>
           <p><b>Contact: </b><span>{(items.contact && items.contact.S) ? items.contact.S : items.contact}</span></p>
           <p><b>Roll No: </b><span>{(items.rollno && items.rollno.S) ? items.rollno.S : items.rollno}</span></p>
-        </div>
-        <div>
           <p><b>Batch & Branch: </b><span>{(items.batch && items.batch.S) ? items.batch.S : items.batch}, &nbsp;
             {(items.branch && items.branch.S) ? items.branch.S : items.branch}</span>
           </p>

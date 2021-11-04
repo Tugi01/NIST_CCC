@@ -479,27 +479,48 @@ body{
 
 
 
+@media only screen and (max-width: 990px) {
+  .creators{
+    margin-top: 35%!important;
+    margin-bottom: 15%!important;
+  }
+  .developer--section{
+    gap: 5em!important;
+  }
+  .developer--section article{
+    width: 90%!important;
+    box-shadow: 0px 0px 30px rgba(127, 0, 255, .8)!important;
+  }
+}
+.creators{
+  font-family: 'Roboto Slab', serif;
+  font-size: 40px;
+  margin-top: 10%;
+  margin-bottom: 4%;
+}
 .developer--section{
-  margin-top: 15%;
   margin-bottom: 20%;
   display: flex;
-  gap: 2em;
+  gap: 3em;
   flex-wrap: wrap;
   justify-content: center;
 }
 .developer--section article{
+  border: none;
   padding: 20px;
   border-radius: 10px;
   width: 30%;
+  position: relative;
+  box-shadow: 10px -10px 30px -15px rgba(127, 0, 255, .8);
 }
 .developer--section article  img{
   border-radius: 20px;
-  padding: 15px;
+  padding: 10px;
 }
 .developer--section article div{
-  position: relative;
   display: flex;
   justify-content: center;
+
 }
 .developer--section article  h1{
   font-family: 'Roboto Slab', serif;
@@ -507,10 +528,21 @@ body{
   background-color: #fff;
   padding: 8px 25px;
   position: absolute;
-  bottom: 0%;
+  top: 1%;
   border-radius: 8px;
 }
-
+.developer--text{
+  text-align: center;
+}
+.developer--text h3{
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: cursive;
+  letter-spacing: 1px;
+}
+.developer--text p{
+  padding: 10px 20px;
+}
 
 
 

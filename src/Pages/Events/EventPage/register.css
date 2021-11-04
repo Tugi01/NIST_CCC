@@ -13,6 +13,9 @@
     margin-top: 10px;
     text-align: center!important;
   }
+  .ticket--card--info  div p{
+    font-size: 15px!important;
+  }
 }
 .modal--card{
   padding: 10px;
@@ -75,8 +78,9 @@
 
 
 .view--ticket .card{
-  background: #7474BF!important;
   padding: 30px!important;
+  box-shadow: 0px 4px 30px 4px #7474BF!important;
+  border: none!important;
 }
 .view--ticket h2{
   text-align: center;
@@ -102,4 +106,5 @@
   flex-direction: row;
   align-self: center;
   gap: 2em;
+  text-align: center;
 }
