@@ -47,3 +47,37 @@
 .toast{
   color: aqua;
 }
+
+
+
+
+.cards--admin{
+  margin-top: 15%;
+  margin-bottom: 20%;
+}
+.cards--admin h1{
+  margin-bottom: 50px;
+  font-family: 'Roboto Slab', serif;
+  background: #7474BF; 
+  background: linear-gradient(to right, #348AC7, #7474BF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: transparent;
+}
+.cards--admin .card{
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+.cards--admin .card:hover{
+  transform: translateY(-5px);
+}
+.cards--admin .text-large{
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.cards--admin p{
+  padding: 0%;
+  margin: 0%;
+}

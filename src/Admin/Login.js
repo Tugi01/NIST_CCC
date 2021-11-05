@@ -36,10 +36,10 @@ const Login = () => {
     <div className="login--container">
       <div className="login--card card shadow">
         <div className="logo">
-          <img src={clubLogo} height="180" width="150" alt="logo" />
-          <h4 className="mt-3">NIST CCC</h4>
+          <img src={clubLogo} height="200" width="150" alt="logo" />
+          <h4 className="mt-2">NIST CCC</h4>
         </div>
-        <article style={{ textAlign: 'center', margin: '40px 0px' }}>
+        <article style={{ textAlign: 'center', margin: '10px 0px' }}>
           <p className="login--text">Please login with your nist ID.</p>
           <GoogleLogin
             clientId="963909555098-mr16i76727grhco55h039cdovma3cl2h.apps.googleusercontent.com"
@@ -50,6 +50,7 @@ const Login = () => {
             onFailure={responseError}
           />
         </article>
+        <br />
       </div>
     </div>
   </section>
