@@ -208,6 +208,18 @@ export const club_member_details = [
     year: '2018'
   },
   {
+    id: 2,
+    firstname: 'Priyanshu',
+     fullname: 'Priyanshu Mishra',
+    description: `Love and interest for web development and Cloud Computing. So, far I learned and hosted websites on cloud.`,
+    desgination: 'Web Developer',
+    member_type: 'Core Member',
+    profile_img: 'https://avatars.githubusercontent.com/u/78350727?s=400&u=b4835ee364b742de9ff8d8ca3263bbd7dbd62782&v=4',
+    linkedln_link: `https://www.linkedin.com/in/priyanshu-mishra-7654181a8`,
+    github_link: `https://github.com/priyanshu-mishra-18`,
+    year: '2018'
+  },
+  {
     id: 8,
     firstname: 'Ritik',
     fullname: 'Ritik Kumar',
