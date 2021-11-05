@@ -18,7 +18,9 @@ import PrivacyPolicy from './Pages/PrivacyPolicy';
 import Hiring from './Pages/Hiring';
 import Blogs from './Pages/Blogs';
 import Developer from './Pages/Developer';
-
+import { ProtectedRoute, SignInRoute } from './ProtectedRoutes';
+import Login from './Admin/Login';
+import Dashboard from './Admin/Dashboard';
 
 
 const App = () => {
@@ -44,6 +46,10 @@ const App = () => {
         <Route path="/hiring" component={Hiring} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/developer" component={Developer} />
+
+
+        <SignInRoute exact path="/admin" component={Login} />
+        <ProtectedRoute path="/admin/dashboard" component={Dashboard} />
         <Route path="*" component={Error} />
       </Switch>
       <Footer />

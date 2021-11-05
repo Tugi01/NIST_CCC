@@ -16,7 +16,7 @@ export const club_member_details = [
   {
     id: 2,
     firstname: 'Suman',
-     fullname: 'Suman Patra',
+    fullname: 'Suman Patra',
     description: `Love and interest for web development and Cloud Computing. So, far I learned and hosted websites on cloud, as well as hands on experience on cloud.`,
     desgination: 'Web Developer',
     member_type: 'Core Member',
@@ -76,7 +76,7 @@ export const club_member_details = [
   {
     id: 5,
     firstname: 'Vikas',
-     fullname: 'Vikas Kumar',
+    fullname: 'Vikas Kumar',
     description: `Interest for web development and Cloud Computing. So, far I learned to build and host websites and learning cloud computing.`,
     desgination: 'Web Developer',
     member_type: 'Core Member',
@@ -111,7 +111,7 @@ export const club_member_details = [
   },
   {
     id: 9,
-    firstname:'Asutosh',
+    firstname: 'Asutosh',
     fullname: 'Asutosh Das',
     description: `interest for web development and Cloud Computing and machine learing`,
     desgination: 'Frontend developer',
@@ -145,7 +145,7 @@ export const club_member_details = [
     github_link: `https://github.com/su-d`,
     year: '2018'
   },
-  
+
   {
     id: 10,
     firstname: 'Sai',
@@ -210,7 +210,7 @@ export const club_member_details = [
   {
     id: 2,
     firstname: 'Priyanshu',
-     fullname: 'Priyanshu Mishra',
+    fullname: 'Priyanshu Mishra',
     description: `Love and interest for web development and Cloud Computing. So, far I learned and hosted websites on cloud.`,
     desgination: 'Web Developer',
     member_type: 'Core Member',
@@ -232,3 +232,12 @@ export const club_member_details = [
     year: '2018'
   },
 ];
+
+
+export const admin_data = [
+  {
+    email: 'dmondal.it.2018@nist.edu',
+    name: 'Debarshi Mondal',
+    year: 2018
+  }
+]
