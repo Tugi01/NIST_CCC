@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import { GlobalContext } from '../../Context';
 import './Navbar.css';
-import logo from '../../club_logo.png';
+import logo from '../../Images/club_logo.png';
 
 
 

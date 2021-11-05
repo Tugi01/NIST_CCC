@@ -1,6 +1,6 @@
 import React from 'react'
 import { useHistory } from 'react-router';
-import Notfound from '../404.png';
+import Notfound from '../Images/404.png';
 
 
 

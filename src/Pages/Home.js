@@ -2,7 +2,7 @@ import React from 'react'
 import Svg1 from '../Component/SVGs/Svg1'
 import TechWeDrive from '../Component/TechWeDrive'
 import Events from './Events/Events'
-import logo from '../club_logo.png';
+import logo from '../Images/club_logo.png';
 
 
 const Home = () => {

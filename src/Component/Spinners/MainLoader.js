@@ -1,5 +1,5 @@
 import React from 'react'
-import Spin from '../../club_logo.png'
+import Spin from '../../Images/club_logo.png'
 import './loader.css';
 
 
