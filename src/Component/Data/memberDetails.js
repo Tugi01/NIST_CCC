@@ -234,6 +234,7 @@ export const club_member_details = [
 ];
 
 
+
 export const admin_data = [
   {
     email: 'dmondal.it.2018@nist.edu',
