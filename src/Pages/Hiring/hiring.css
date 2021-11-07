@@ -1,0 +1,12 @@
+.hiring--process{
+  margin-top: 12%; 
+  margin-bottom: 20%;
+}
+.hiring--process h1{
+  background: #7474BF; 
+  background: linear-gradient(to right, #348AC7, #7474BF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: transparent;
+  font-weight: bold;
+}

@@ -15,7 +15,7 @@ import MemberBrief from './Pages/Members/MemberBrief';
 import EventPage from './Pages/Events/EventPage/EventPage';
 import OneEvent from './Pages/Events/EventPage/OneEvent';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
-import Hiring from './Pages/Hiring';
+import Hiring from './Pages/Hiring/Hiring';
 import Blogs from './Pages/Blogs';
 import Developer from './Pages/Developer';
 import { ProtectedRoute, SignInRoute } from './ProtectedRoutes';
@@ -47,7 +47,7 @@ const App = () => {
         <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/developer" component={Developer} />
 
-          
+
         <SignInRoute exact path="/admin" component={Login} />
         <ProtectedRoute path="/admin/dashboard" component={Dashboard} />
         <ProtectedRoute path="/admin/register" component={Dashboard} />
