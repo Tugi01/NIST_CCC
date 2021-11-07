@@ -47,9 +47,10 @@ const App = () => {
         <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/developer" component={Developer} />
 
-
+          
         <SignInRoute exact path="/admin" component={Login} />
         <ProtectedRoute path="/admin/dashboard" component={Dashboard} />
+        <ProtectedRoute path="/admin/register" component={Dashboard} />
         <Route path="*" component={Error} />
       </Switch>
       <Footer />

@@ -41,7 +41,7 @@ const Navbar = () => {
             <i className="fas fa-external-link-alt"></i>
           </button>&nbsp;
           {
-            cookie.admin_data && pathname === '/admin/dashboard'
+            cookie.admin_data && pathname.includes('admin')
               ? <button onClick={() => logout()} className="btn-contact btn">Logout</button>
               : <button onClick={someFun1} className="btn-contact btn">Contact</button>
           }
