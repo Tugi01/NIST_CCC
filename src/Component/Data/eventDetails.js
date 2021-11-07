@@ -8,8 +8,6 @@ export const eventDetails = [
     venue: 'Will Update',
     Days: 2,
 
-
-
     event_type: 'Upcoming',
     check_type: true
   }
