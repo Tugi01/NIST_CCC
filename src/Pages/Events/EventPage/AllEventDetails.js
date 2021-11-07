@@ -28,7 +28,7 @@ const EventDetails = () => {
     {
       filterData && filterData.length > 0
         ? filterData.map((item, i) => {
-          const { event_type, name, describe, date } = item;
+          const { event_type, name, describe } = item;
           return <div key={i} className="event--card card shadow-lg">
             <p className="badge bg-warning"><i className="fas fa-atom"></i> {event_type}</p>
             <main className="p-0">
