@@ -239,5 +239,10 @@ export const admin_data = [
     email: 'dmondal.it.2018@nist.edu',
     name: 'Debarshi Mondal',
     year: 2018
+  },
+  {
+    email: 'ssreddy.cse.2018@nist.edu',
+    name: 'Sutari Sunil Reddy',
+    year: 2018
   }
 ]
