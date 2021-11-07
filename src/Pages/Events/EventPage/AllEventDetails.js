@@ -41,7 +41,7 @@ const EventDetails = () => {
               <p>
                 {describe}
               </p>
-              <h6>Date: {date} </h6>
+              <h6>-Building Cloud Native Application with AWS </h6>
               <Link to="/events-details">
                 <button className="btn btn-primary">
                   Check Details <i className="fas fa-long-arrow-alt-right p-1"></i>
