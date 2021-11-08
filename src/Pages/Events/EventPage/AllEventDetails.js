@@ -43,10 +43,10 @@ const EventDetails = () => {
               </p>
               <h6 className="text-info" style={{
                 fontFamily: 'cursive'
-              }}>- Building <b>Cloud Native</b> Application with AWS </h6>
+              }}> 👉  Building <b>Cloud Native</b> Application with AWS <i className="fas fa-shapes"></i> </h6>
               <Link to="/events-details">
                 <button className="btn btn-primary">
-                  Check Details <i className="fas fa-long-arrow-alt-right p-1"></i>
+                  Check Details <i className="fas fa-rocket p-1"></i>
                 </button>
               </Link>
             </main>

@@ -140,7 +140,7 @@ const OneEvent = () => {
           <p className='badge bg-info'>2 Days Workshops</p>
         </div>
         <article className="event--info">
-          <h6>Timings 👇 </h6>
+          <h6><i className="fas fa-hourglass-start"></i> Timings 👇 </h6>
           {
             (getUserItem) ? <article className="badge--register">
               <span className="registered--badge badge shadow-lg"> Registered 🎉🥳</span>
@@ -149,11 +149,11 @@ const OneEvent = () => {
           <div className="timings" id="view-ticket">
             <br />
             <p className="date"><b>Date:</b> 10<sup>th</sup> - 11<sup>th</sup> of November</p>
-            <p><b>Time:</b> 2:30 pm to 5:30pm</p>
+            <p><b>Time:</b> 5pm onwards</p>
           </div>
         </article>
         <article className="place">
-          <p className="badge bg-warning" id="view-register">Venue: LHC - 407</p>
+          <p className="badge bg-warning" id="view-register">Venue: <i className="fas fa-map-marker-alt"></i> <b>Gal - 301</b></p>
         </article>
       </div>
     </div>
