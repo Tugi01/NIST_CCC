@@ -12,8 +12,9 @@ const Developer = () => {
         </div>
         <section className="developer--text">
           <h3>Developer</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, ut. Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Illo, libero.</p>
+          <p>Loved to build Serverless Scaleable Web
+            applications on Cloud. Worked on how to Build Serverless Scaleable, MERN/full-stack
+            web apps, and APIs.</p>
         </section>
       </article>
       <article className="card animate__animated animate__zoomInUp">
@@ -23,8 +24,7 @@ const Developer = () => {
         </div>
         <section className="developer--text">
           <h3>Designer</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, ut. Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Illo, libero.</p>
+          <p>Interest for Graphics Design, Android App Development and Cloud Computing.</p>
         </section>
       </article>
     </section>

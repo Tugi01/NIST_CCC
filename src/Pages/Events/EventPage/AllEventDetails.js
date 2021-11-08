@@ -24,7 +24,7 @@ const EventDetails = () => {
 
 
 
-  return <section className="event--details--section">
+  return <section className="event--details--section animate__animated animate__tada">
     {
       filterData && filterData.length > 0
         ? filterData.map((item, i) => {
@@ -41,7 +41,9 @@ const EventDetails = () => {
               <p>
                 {describe}
               </p>
-              <h6>-Building Cloud Native Application with AWS </h6>
+              <h6 className="text-info" style={{
+                fontFamily: 'cursive'
+              }}>- Building <b>Cloud Native</b> Application with AWS </h6>
               <Link to="/events-details">
                 <button className="btn btn-primary">
                   Check Details <i className="fas fa-long-arrow-alt-right p-1"></i>
