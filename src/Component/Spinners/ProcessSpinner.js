@@ -9,8 +9,8 @@ const ProcessSpinner = () => {
       style={{
         width: '25px',
         height: "25px",
-        border: `4px solid #170A59`,
-        borderColor: `transparent transparent transparent #170A59`
+        border: `4px solid #fff`,
+        borderColor: `transparent transparent transparent #fff`
       }}
     ></div><div></div><div></div><div></div>
   </div>

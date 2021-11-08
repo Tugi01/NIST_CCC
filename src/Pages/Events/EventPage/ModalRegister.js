@@ -16,6 +16,8 @@ const ModalRegister = ({ setRegister }) => {
   const [load, setLoad] = useState(false);
 
 
+
+  
   const sumbit_data = (data) => {
     setLoad(true);
     const { fullname, email, rollno, contact, branch, batch } = data;

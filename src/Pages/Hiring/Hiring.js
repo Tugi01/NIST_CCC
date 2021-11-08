@@ -1,20 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import SelectBoxes from './SelectBoxes';
 import './hiring.css';
+import axios from 'axios';
+import ProcessSpinner from '../../Component/Spinners/ProcessSpinner';
+import { toast } from 'react-toastify';
+
 
 
 const Hiring = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
+  const [load, setLoad] = useState(false);
 
-  const sumbit_data = () => {
 
+  const sumbit_data = (data) => {
+    setLoad(true);
+    axios({
+      method: 'POST',
+      url: ' https://6svbsfa95h.execute-api.ap-south-1.amazonaws.com/dev/selection',
+      data
+    }).then(() => {
+      setLoad(false);
+      toast.success('Successfully Updated!');
+      setTimeout(() => {
+        window.location.reload();
+      }, 2000);
+    }).catch(() => {
+      toast.error('Something Went Wrong, Try Again!');
+    });
   };
 
+
+
   return <section className="container hiring--process">
-    <h1 className="mb-5">Selection Process</h1>
+    <h1 className="text-center">Selection Process</h1>
     <article style={{ display: 'flex', justifyContent: 'center' }}>
-      <main className="card shadow-lg modal--card" style={{borderRadius: 20}}>
+      <main className="card shadow-lg modal--card" style={{ borderRadius: 20 }}>
         <article className="modal-body mt-2">
           <p style={{ fontSize: 18, marginBottom: 40 }}>Please fillup all the details in order to process...</p>
           <form className={`contact_card`} onSubmit={handleSubmit(sumbit_data)}>
@@ -36,8 +57,8 @@ const Hiring = () => {
             <section className="row">
               <div className="col-md-6 mb-4">
                 <label className="form-label">Email Address (nist.edu)</label>
-                <input type="text" className="form-control" {...register("email", { required: true, pattern: /\S+@nist.edu$/ })} />
-                <p>{errors.email ? errors.email?.type === 'pattern' ? <span className="text-danger">must a valid nist.edu mail ID</span>
+                <input type="text" className="form-control" {...register("emailId", { required: true, pattern: /\S+@nist.edu$/ })} />
+                <p>{errors.emailId ? errors.emailId?.type === 'pattern' ? <span className="text-danger">must a valid nist.edu mail ID</span>
                   : <span className="text-danger">This field is required</span>
                   : null
                 }</p>
@@ -55,7 +76,7 @@ const Hiring = () => {
             <article style={{ float: 'right', display: 'flex', gap: "1em" }}>
               <button className="btn btn-success" style={{ width: '150px' }}>
                 {
-                  'Submit'
+                  load ? <ProcessSpinner /> : 'Submit'
                 }
               </button>
               <button type="button" onClick={() => window.location.reload()} className="btn btn-danger">Close</button>

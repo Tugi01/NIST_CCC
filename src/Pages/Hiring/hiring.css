@@ -9,4 +9,16 @@
   -webkit-text-fill-color: transparent;
   background-clip: transparent;
   font-weight: bold;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 990px) {
+  .hiring--process article{
+    margin-top: -15%;
+  }
+  .hiring--process{
+    margin-top: 38%;
+  }
+  .hiring--process button{
+    margin-top: 60px;
+  }
 }
