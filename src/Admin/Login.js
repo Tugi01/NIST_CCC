@@ -42,7 +42,7 @@ const Login = () => {
         <article style={{ textAlign: 'center', margin: '10px 0px' }}>
           <p className="login--text">Please login with your nist ID.</p>
           <GoogleLogin
-            clientId="963909555098-mr16i76727grhco55h039cdovma3cl2h.apps.googleusercontent.com"
+            clientId="963909555098-9qda2vjm4jlucgvltgbmm435llhhh332.apps.googleusercontent.com"
             render={renderProps => (
               <button onClick={renderProps.onClick} className="btn btn-info login--btn">{loginBtn}</button>
             )}
