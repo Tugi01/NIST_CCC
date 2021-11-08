@@ -17,10 +17,10 @@ const ModalRegister = ({ setRegister }) => {
 
 
 
-  
+
   const sumbit_data = (data) => {
     setLoad(true);
-    const { fullname, email, rollno, contact, branch, batch } = data;
+    const { fullname, email, rollno, contact, branch, batch, residence } = data;
     var ticket = `CCC_${randomstring.generate({
       length: 6,
       capitalization: 'uppercase'
@@ -28,7 +28,7 @@ const ModalRegister = ({ setRegister }) => {
     var configure = {
       inputs: {
         check: "register", email: `${email.toLowerCase().trim()}`, name: `${fullname}`, branch: `${branch}`, batch: `${batch}`,
-        rollno: `${rollno}`, ticket: `${ticket}`, contact: `${contact}`,
+        rollno: `${rollno}`, ticket: `${ticket}`, contact: `${contact}`, residence: `${residence}`,
       }
     };
     var configure_inputs = {
@@ -90,7 +90,6 @@ const ModalRegister = ({ setRegister }) => {
               }</p>
             </div>
           </section>
-          <SelectBox register={register} errors={errors} />
           <section className="row">
             <div className="col-md-6 mb-4">
               <label className="form-label">Email Address (nist.edu)</label>
@@ -109,12 +108,7 @@ const ModalRegister = ({ setRegister }) => {
               }</p>
             </div>
           </section>
-          <section className="row mb-4">
-            <div className="col-md-6">
-              <label className="form-label">Other (optional)</label>
-              <input type="text" className="form-control" />
-            </div>
-          </section>
+          <SelectBox register={register} errors={errors} />
           <article style={{ float: 'right', display: 'flex', gap: "1em" }}>
             <button className="btn btn-success" style={{ width: '150px' }}>
               {

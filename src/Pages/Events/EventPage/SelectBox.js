@@ -16,6 +16,10 @@ const SelectBox = ({ errors, register }) => {
     { name: '2019', value: '2019' },
     { name: '2020', value: '2020' },
   ];
+  var residence = [
+    {name: 'Hostelite', value: 'hostelite'},
+    {name: 'Locality', value: 'Locality'},
+  ]
 
 
   return <section className="row" style={{ marginTop: -10 }}>
@@ -46,6 +50,20 @@ const SelectBox = ({ errors, register }) => {
         }
       </select>
       {errors.branch && <span className="text-danger">This field is required</span>}
+    </div>
+    <div className={`select--box-2 col-md-6 mb-4 ${(errors.residence) ? 'select--box-2--modify' : 'select--box-2'}`}>
+      <label className="form-label">Choose Residence</label>
+      <i className="fas fa-sort-down"></i>
+      <select className="form-control" {...register("residence", { required: true })} >
+        <option value="">Select</option>
+        {
+          residence.map((item, i) => {
+            const { name, value } = item;
+            return <option key={i} value={value}>{name}</option>
+          })
+        }
+      </select>
+      {errors.residence && <span className="text-danger">This field is required</span>}
     </div>
   </section>
 }

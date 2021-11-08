@@ -16,7 +16,6 @@ const AdminCard = () => {
   }, [pathname]);
 
 
-  console.log(hireUser);
 
 
   return <div className="row">
@@ -56,7 +55,7 @@ const AdminCard = () => {
         </div>
       </div>
     </div>
-    <div className="links--admin col-md-4 mb-4">
+    <Link to="/admin/iam--details" className="links--admin col-md-4 mb-4">
       <div className="card border-left-primary shadow h-100 py-2">
         <div className="card-body">
           <div className="row no-gutters align-items-center">
@@ -67,13 +66,13 @@ const AdminCard = () => {
               <div className="h1 mb-3 font-weight-bold text-gray-800 count">01</div>
               <p>AWS IAM User</p>
             </div>
-            <div className="col-auto">
+            <div className="col-auto text-dark">
               <i className="fas fa-calendar-week fa-2x text-gray-300"></i>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </Link>
     <Link to="/admin/hiring--details" className="links--admin col-md-4 mb-4">
       <div className="card border-left-primary shadow h-100 py-2">
         <div className="card-body">
