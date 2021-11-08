@@ -7,13 +7,17 @@ import { adminAuthContext } from './AdminContext';
 
 
 const AdminCard = () => {
-  const { data, get_all_register_users } = useContext(adminAuthContext);
+  const { data, get_all_register_users, get_all_hiring_users, hireUser } = useContext(adminAuthContext);
   const { pathname } = useLocation();
 
   useEffect(() => {
     get_all_register_users();
+    get_all_hiring_users();
   }, [pathname]);
-  
+
+
+  console.log(hireUser);
+
 
   return <div className="row">
     <Link to="/admin/register" className="links--admin col-md-4 mb-4">
@@ -28,7 +32,7 @@ const AdminCard = () => {
               <p>Event - Serverless in Action</p>
             </div>
             <div className="col-auto">
-              <i className="fas fa-calendar-week fa-2x text-gray-300"></i>
+              <i className="fas fa-plus fa-2x text-gray-300"></i>
             </div>
           </div>
         </div>
@@ -70,6 +74,24 @@ const AdminCard = () => {
         </div>
       </div>
     </div>
+    <Link to="/admin/hiring--details" className="links--admin col-md-4 mb-4">
+      <div className="card border-left-primary shadow h-100 py-2">
+        <div className="card-body">
+          <div className="row no-gutters align-items-center">
+            <div className="col mr-2">
+              <div className="text-large font-weight-bold text-danger mb-1">
+                Hiring (Total)
+              </div>
+              <div className="h1 mb-3 font-weight-bold text-gray-800 count">{hireUser.length}</div>
+              <p>Selection Process</p>
+            </div>
+            <div className="col-auto text-dark">
+              <i className="fas fa-calendar-week fa-2x text-gray-300"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Link>
   </div>
 }
 

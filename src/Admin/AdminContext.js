@@ -9,6 +9,7 @@ const adminAuthContext = createContext();
 const AdminContext = ({ children }) => {
   const [c, setCookie, removeCookie] = useCookies();
   const [data, setData] = useState([]);
+  const [hireUser, setHireUser] = useState([]);
   const [user_loader, setUserLoader] = useState(false);
 
 
@@ -39,7 +40,19 @@ const AdminContext = ({ children }) => {
       console.log(err);
     })
   };
- 
+
+  const get_all_hiring_users = () => {
+    setUserLoader(true);
+    axios({
+      method: 'get',
+      url: 'https://6svbsfa95h.execute-api.ap-south-1.amazonaws.com/dev/get_hiring',
+    }).then((el) => {
+      setUserLoader(false);
+      setHireUser(el.data);
+    }).catch((err) => {
+      console.log(err);
+    })
+  };
 
 
 
@@ -48,7 +61,9 @@ const AdminContext = ({ children }) => {
     logout,
     get_all_register_users,
     user_loader,
-    data
+    data,
+    get_all_hiring_users,
+    hireUser
   }}>
     {children}
   </adminAuthContext.Provider>

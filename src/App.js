@@ -51,6 +51,7 @@ const App = () => {
         <SignInRoute exact path="/admin" component={Login} />
         <ProtectedRoute path="/admin/dashboard" component={Dashboard} />
         <ProtectedRoute path="/admin/register" component={Dashboard} />
+        <ProtectedRoute path="/admin/hiring--details" component={Dashboard} />
         <Route path="*" component={Error} />
       </Switch>
       <Footer />
