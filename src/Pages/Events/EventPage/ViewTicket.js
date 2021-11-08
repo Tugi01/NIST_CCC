@@ -18,7 +18,7 @@ const ViewTicket = ({ getItem }) => {
           <p><b>Batch & Branch: </b><span>{(items.batch && items.batch.S) ? items.batch.S : items.batch}, &nbsp;
             {(items.branch && items.branch.S) ? items.branch.S : items.branch}</span>
           </p>
-          <p><b>Email: </b><span>{(items.emailId && items.emailId.S) ? items.emailId.S : items.email}</span></p>
+          <p><b>Email: </b><span className="text-lowercase">{(items.emailId && items.emailId.S) ? items.emailId.S : items.email}</span></p>
         </div>
       </main>
     </div>

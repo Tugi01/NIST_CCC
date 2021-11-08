@@ -78,20 +78,27 @@ const OneEvent = () => {
       confirmButtonColor: '#170A59',
       cancelButtonColor: '#7474BF',
       confirmButtonText: 'Register',
+      showDenyButton: true,
+      denyButtonText: `Close`,
     }).then((result) => {
       Swal.close();
       if (result.isConfirmed) {
         setRegister(true);
-      } else {
+      } else if (result.isDenied) {
+        Swal.close();
+      }
+      else {
         Swal.fire({
           title: 'Registered Email',
           input: 'email',
-          inputLabel: 'provide your email to verify!',
+          inputLabel: 'Provide your email to verify!',
           inputPlaceholder: 'Enter email address here',
           confirmButtonColor: '#3085d6',
           confirmButtonText: 'Verify',
           allowOutsideClick: false,
           showLoaderOnConfirm: true,
+          cancelButtonText: 'Cancel',
+          showCancelButton: true,
           preConfirm: (login) => {
             return check_data(login)
           }

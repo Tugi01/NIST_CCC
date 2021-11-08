@@ -4,12 +4,12 @@ const SelectBox = ({ errors, register }) => {
 
 
   var branch_wise = [
-    { name: 'B.Tech - CSE', value: 'b.tech cse' },
-    { name: 'B.Tech - I.T.', value: 'b.tech i.t.' },
-    { name: 'B.Tech - ECE', value: 'b.tech ece' },
-    { name: 'B.Tech - EE', value: 'b.tech ee' },
-    { name: 'B.Tech - ME', value: 'b.tech me' },
-    { name: 'B.Tech - CE', value: 'b.tech ce' },
+    { name: 'B.Tech - CSE', value: 'b.tech - CSE' },
+    { name: 'B.Tech - I.T.', value: 'b.tech - I.T.' },
+    { name: 'B.Tech - ECE', value: 'b.tech - ECE' },
+    { name: 'B.Tech - EE', value: 'b.tech - EE' },
+    { name: 'B.Tech - ME', value: 'b.tech - ME' },
+    { name: 'B.Tech - CE', value: 'b.tech - CE' },
   ];
   var year_wise = [
     { name: '2018', value: '2018' },
