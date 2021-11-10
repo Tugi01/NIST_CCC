@@ -16,10 +16,15 @@ const RegisterTable = () => {
     delete_loader: false,
     index: null
   });
+  const [credLoader, setCredLoader] = useState({
+    cred_loader: false,
+    index: null
+  });
   const [input, setInput] = useState('');
   useEffect(() => {
     get_all_register_users();
   }, [pathname]);
+
 
 
   const delete_user = (email, i) => {
@@ -53,9 +58,9 @@ const RegisterTable = () => {
   }
 
 
-  const sent_credentials = (email, name) => {
+  const sent_credentials = (email, name, index) => {
+    setCredLoader({ cred_loader: true, index });
     var getName = name.split(' ')[0];
-    console.log(getName);
     var configure = {
       inputs: {
         check: "credentials", email, name: `${getName}`
@@ -72,6 +77,7 @@ const RegisterTable = () => {
     }).then((el) => {
       if (el.data && el.data.status === 'SUCCEEDED') {
         get_all_register_users();
+        setCredLoader({ cred_loader: false, index: null });
       }
     })
   };
@@ -103,6 +109,7 @@ const RegisterTable = () => {
               <th scope="col">Email</th>
               <th scope="col">Name</th>
               <th scope="col">Contact</th>
+              <th>Residence</th>
               <th scope="col">Cred</th>
               <th scope="col">Delete</th>
             </tr>
@@ -110,7 +117,7 @@ const RegisterTable = () => {
           <tbody className="table--body text-capitalize">
             {
               filterData && filterData.map((items, i) => {
-                const { ticketId, emailId, contact, name, sent_cred } = items;
+                const { ticketId, emailId, contact, name, sent_cred, residence } = items;
                 return <tr key={i} style={{
                   cursor: 'pointer',
                   backgroundColor: (i % 2) === 0 ? 'white' : 'aliceblue'
@@ -120,14 +127,19 @@ const RegisterTable = () => {
                   <td>{emailId}</td>
                   <td className="text-capitalize">{name}</td>
                   <td>{contact}</td>
+                  <td className="text-capitalize">{residence || '--'}</td>
                   <td>
                     {
                       sent_cred === 'YE'
                         ? <span className="badge" style={{
                           fontSize: 16, textTransform: 'capitalize', padding: '5px 20px', backgroundColor: 'lightgreen'
                         }}>Sent</span>
-                        : <button onClick={() => sent_credentials(emailId, name)}
-                          className="text-white btn btn-info btn--1"><i className="fas fa-check"></i></button>
+                        : <button onClick={() => sent_credentials(emailId, name, i)}
+                          className="text-white btn btn-info btn--1">
+                          {
+                            (credLoader.cred_loader && i === credLoader.index) ? <ProcessSpinner /> : <i className="fas fa-check"></i>
+                          }
+                        </button>
                     }
                   </td>
                   <td>

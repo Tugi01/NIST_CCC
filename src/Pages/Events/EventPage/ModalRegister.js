@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useContext, useState } from 'react';
 import { GlobalContext } from '../../../Context';
 import randomstring from "randomstring";
@@ -6,7 +7,7 @@ import { useForm } from "react-hook-form";
 import SelectBox from './SelectBox';
 import axios from 'axios';
 import { toast } from 'react-toastify';
-import ProcessSpinner from '../../../Component/Spinners/ProcessSpinner';
+// import ProcessSpinner from '../../../Component/Spinners/ProcessSpinner';
 
 
 
@@ -69,59 +70,62 @@ const ModalRegister = ({ setRegister }) => {
 
 
 
-  return <article style={{ display: 'flex', justifyContent: 'center' }}>
-    <main className="card shadow-lg modal--card">
-      <h1>Register Here</h1>
-      <b style={{ marginTop: -50 }} className="p-1 lead"><center>Please provide all details in order to process!</center></b>
-      <article className="modal-body mt-2">
-        <form className={`contact_card`} onSubmit={handleSubmit(sumbit_data)}>
-          <section className="row">
-            <div className="col-md-6 mb-4">
-              <label className="form-label" id="view-ticket">Full Name</label>
-              <input type="text" className="form-control" {...register("fullname", { required: true })} />
-              <p>{errors.fullname && <span className="text-danger">This field is required</span>}</p>
-            </div>
-            <div className="col-md-6 mb-4">
-              <label className="form-label">Roll No</label>
-              <input type="text" className="form-control" {...register("rollno", { required: true, pattern: /^\d{9}$/ })} />
-              <p>{errors.rollno ? errors.rollno?.type === 'pattern' ? <span className="text-danger">must be of 9 digits</span>
-                : <span className="text-danger">This field is required</span>
-                : null
-              }</p>
-            </div>
-          </section>
-          <section className="row">
-            <div className="col-md-6 mb-4">
-              <label className="form-label">Email Address (nist.edu)</label>
-              <input type="text" className="form-control" {...register("email", { required: true, pattern: /\S+@nist.edu$/ })} />
-              <p>{errors.email ? errors.email?.type === 'pattern' ? <span className="text-danger">must a valid nist.edu mail ID</span>
-                : <span className="text-danger">This field is required</span>
-                : null
-              }</p>
-            </div>
-            <div className="col-md-6 mb-4">
-              <label className="form-label">Contact</label>
-              <input type="text" className="form-control" {...register("contact", { required: true, pattern: /^[0-9]{10}$/ })} />
-              <p>{errors.contact ? errors.contact?.type === 'pattern' ? <span className="text-danger">must be of 10 digits</span>
-                : <span className="text-danger">This field is required</span>
-                : null
-              }</p>
-            </div>
-          </section>
-          <SelectBox register={register} errors={errors} />
-          <article style={{ float: 'right', display: 'flex', gap: "1em" }}>
-            <button className="btn btn-success" style={{ width: '150px' }}>
+  return <>
+    <article style={{ display: 'flex', justifyContent: 'center' }}>
+      <main className="card shadow-lg modal--card">
+        <h1>Register Here <span style={{ fontSize: 18 }}>(Closed)</span></h1>
+        <b style={{ marginTop: -50 }} className="p-1 lead"><center>Please provide all details in order to process!</center></b>
+        <article className="modal-body mt-2">
+          <form className={`contact_card`} onSubmit={handleSubmit(sumbit_data)}>
+            <section className="row">
+              <div className="col-md-6 mb-4">
+                <label className="form-label" id="view-ticket">Full Name</label>
+                <input type="text" className="form-control" {...register("fullname", { required: true })} />
+                <p>{errors.fullname && <span className="text-danger">This field is required</span>}</p>
+              </div>
+              <div className="col-md-6 mb-4">
+                <label className="form-label">Roll No</label>
+                <input type="text" className="form-control" {...register("rollno", { required: true, pattern: /^\d{9}$/ })} />
+                <p>{errors.rollno ? errors.rollno?.type === 'pattern' ? <span className="text-danger">must be of 9 digits</span>
+                  : <span className="text-danger">This field is required</span>
+                  : null
+                }</p>
+              </div>
+            </section>
+            <section className="row">
+              <div className="col-md-6 mb-4">
+                <label className="form-label">Email Address (nist.edu)</label>
+                <input type="text" className="form-control" {...register("email", { required: true, pattern: /\S+@nist.edu$/ })} />
+                <p>{errors.email ? errors.email?.type === 'pattern' ? <span className="text-danger">must a valid nist.edu mail ID</span>
+                  : <span className="text-danger">This field is required</span>
+                  : null
+                }</p>
+              </div>
+              <div className="col-md-6 mb-4">
+                <label className="form-label">Contact</label>
+                <input type="text" className="form-control" {...register("contact", { required: true, pattern: /^[0-9]{10}$/ })} />
+                <p>{errors.contact ? errors.contact?.type === 'pattern' ? <span className="text-danger">must be of 10 digits</span>
+                  : <span className="text-danger">This field is required</span>
+                  : null
+                }</p>
+              </div>
+            </section>
+            <SelectBox register={register} errors={errors} />
+            <article style={{ float: 'right', display: 'flex', gap: "1em" }}>
+              {/* <button className="btn btn-success" style={{ width: '150px' }}>
               {
                 load ? <ProcessSpinner /> : 'Submit'
               }
-            </button>
-            <button type="button" onClick={() => window.location.reload()} className="btn btn-danger">Close</button>
-          </article>
-        </form>
-      </article>
-      <br />
-    </main>
-  </article>
+            </button> */}
+              <button type="button" onClick={() => window.location.reload()} className="btn btn-danger">Close</button>
+            </article>
+          </form>
+        </article>
+        <br />
+        <p className="badge p-3 bg-warning" style={{ fontSize: 20 }}>😕 Registartion has Closed</p>
+      </main>
+    </article>
+  </>
 }
 
 export default ModalRegister;
