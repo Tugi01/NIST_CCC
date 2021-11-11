@@ -8,6 +8,7 @@ import Swal from 'sweetalert2';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import ReactConfetti from 'react-confetti/dist/react-confetti';
+import FeedBack from './FeedBack';
 
 
 
@@ -110,8 +111,6 @@ const OneEvent = () => {
   };
 
 
-  console.log(dis);
-
   return <section className="container event--brief--section">
     <ReactConfetti numberOfPieces={dis ? 250 : 0} run={true} />
     <div style={{ margin: '10% 0px' }}>
@@ -162,6 +161,10 @@ const OneEvent = () => {
     }
     {
       getUserItem ? <ViewTicket getItem={getUserItem} /> : null
+    }
+    <br /><br />
+    {
+      getUserItem ? <FeedBack getItem={getUserItem} /> : null
     }
   </section>
 }
