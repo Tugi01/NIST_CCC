@@ -230,7 +230,8 @@ export const club_member_details = [
     linkedln_link: `https://www.linkedin.com/in/ritik-kumar-3a1165225/`,
     github_link: `https://github.com/ritikkumar04`,
     year: '2018'
-    
+  },
+  {
     id: 8,
     firstname: 'Asish',
     fullname: 'Asish Panigrahi',
@@ -242,4 +243,17 @@ export const club_member_details = [
     github_link: `https://github.com/Tugi01`,
     year: '2020'
   },
+   {
+    id: 9,
+    firstname: 'Ashutosh',
+    fullname: 'Ashutosh Tripathy',
+    description: `interest for web development and Cloud Computing.`,
+    desgination: 'Web Developer',
+    member_type: 'Core Member',
+    profile_img: 'https://avatars.githubusercontent.com/u/96585049?v=4',
+    linkedln_link: `https://www.linkedin.com/in/ashutosh-tripathy-9b05aa203/`,
+    github_link: `https://github.com/Ashutosh44444`,
+    year: '2020'
+  }
+  
 ];
